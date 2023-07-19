@@ -301,8 +301,8 @@ footer {
         visibility: hidden !important;
 
     }
-    
-    .footer-img  {
+
+    .footer-img {
         visibility: hidden !important;
     }
 }
@@ -569,14 +569,12 @@ footer {
     }
 
     .header {
-        padding: 10px;
         text-align: center;
         flex-grow: 1;
     }
 
     .header-icon {
-        width: 400px;
-        margin: 0 auto;
+        width: 380px;
     }
 
     .content {
@@ -596,6 +594,7 @@ footer {
         max-width: 100%;
         margin: 0 auto;
         border-radius: 8px;
+
     }
 
     .sir-text {
@@ -813,21 +812,18 @@ footer {
 
     .cities .city {
         transform: translateZ(0);
-      }
-      
-      /* Use CSS transitions with easing */
-      .cities .city {
+    }
+
+    .cities .city {
         transition: all 0.9s ease;
-      }
-      
-      /* Apply GPU-accelerated properties */
-      .cities .city.active {
+    }
+
+    .cities .city.active {
         transform: scale(0.9);
-      }
-      
-      /* Shorten animation duration */
-      .cities .city.active:active {
+    }
+
+    .cities .city.active:active {
         transition: opacity 0.9s ease, transform 0.3s ease;
         transform: scale(0.9);
-      }
+    }
 }
