@@ -374,6 +374,7 @@ footer {
         min-width: 200px;
         max-width: 80%;
         height: 400px;
+        margin: auto;
     }
 
     .cities .city {
@@ -594,7 +595,7 @@ footer {
         max-width: 100%;
         margin: 0 auto;
         border-radius: 8px;
-
+        justify-content: center;
     }
 
     .sir-text {
@@ -625,6 +626,7 @@ footer {
         min-width: 200px;
         max-width: 60%;
         height: 400px;
+        margin: auto;
     }
 
     .cities .city {
