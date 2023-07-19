@@ -1,0 +1,833 @@
+:root {
+    --background-dark: #2d3548;
+    --text-light: rgba(255, 255, 255, 0.6);
+    --text-lighter: rgba(255, 255, 255, 0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    height: 100%;
+    background-color: #0B2DA1 !important;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+@media (max-width: 425px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    .header {
+        padding: 10px;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .header-icon {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .sir-card {
+        background-color: #fff;
+        justify-content: center;
+        padding: 10px 20px;
+        width: 1247px;
+        max-width: 100%;
+        margin: auto;
+        margin-left: 10px;
+        border-radius: 8px;
+    }
+
+    .sir-text {
+        color: #002DA1;
+        font-family: Raleway;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .sir-subtext {
+        color: #000;
+        font-family: Raleway;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .cities {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        min-width: 350px;
+        max-width: 100%;
+        height: 1400px;
+    }
+
+    .cities .city {
+        position: relative;
+        overflow: hidden;
+        min-width: 60px;
+        margin: 10px;
+        background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+        background-size: auto 120%;
+        background-position: center;
+        cursor: pointer;
+        transition: opacity 2.5s ease;
+    }
+
+    .cities .city.active .shadow {
+        box-shadow: inset 0 -120px 120px -120px #1e1e1e, inset 0 -120px 120px -100px #1e1e1e;
+    }
+
+    .cities .city.active .label {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .cities .city.active .label .info>div {
+        left: 0px;
+        opacity: 1;
+    }
+
+    .cities .city:not(.active) {
+        flex-grow: 1;
+        border-radius: 8px;
+    }
+
+    .cities .city:not(.active) .shadow {
+        bottom: -40px;
+        box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+    }
+
+    .cities .city:not(.active) .label {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .cities .city:not(.active) .label .info>div {
+        left: 20px;
+        opacity: 0;
+    }
+
+    .cities .city .shadow {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 180px;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .cities .city .label {
+        display: flex;
+        position: absolute;
+        right: 0px;
+        height: 40px;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .cities .city .label .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-right: 50px;
+        color: white;
+        white-space: pre;
+    }
+
+    .cities .city .label .info>div {
+        position: relative;
+        transition: 0.5s cubic-bezier(254, 223, 5, 0.95), opacity 0.5s ease-out;
+    }
+
+    .cities .city .label .info .main {
+        font-weight: bold;
+        font-size: 1.9rem;
+        position: absolute;
+        bottom: 100px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        color: #fff;
+        display: flex;
+        width: 120px;
+        height: 120px;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        opacity: 1;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+
+    .cities .city .label .info .sub {
+        transition-delay: 0.1s;
+        font-size: 1.2rem;
+        position: absolute;
+        bottom: 20px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        color: #fff;
+        display: flex;
+        width: 120px;
+        height: 120px;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        opacity: 1;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+
+    .city-title {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        font-size: 34px;
+        line-height: 1.1em;
+        margin-top: -50px
+    }
+
+    .city-square {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        width: 400px;
+        height: 70%;
+        margin-left: -24px;
+        margin-top: -50px;
+        background-color: #1e1e1ebd;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .city-square.active {
+        width: 0
+    }
+
+    .city-text-less {
+        position: absolute;
+        bottom: 80px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        color: #fff;
+        display: flex;
+        width: 120px;
+        height: 120px;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        opacity: 1;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+
+    .city .city-text-less {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    .footer {
+        visibility: hidden !important;
+
+    }
+    
+    .footer-img  {
+        visibility: hidden !important;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+    }
+
+    .header {
+        padding: 10px;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .header-icon {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .sir-card {
+        background-color: #fff;
+        justify-content: center;
+        padding: 10px 20px;
+        width: 1247px;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+    .sir-text {
+        color: #002DA1;
+        font-family: Raleway;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    .sir-subtext {
+        color: #000;
+        font-family: Raleway;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .cities {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        overflow: hidden;
+        min-width: 200px;
+        max-width: 80%;
+        height: 400px;
+    }
+
+    .cities .city {
+        position: relative;
+        overflow: hidden;
+        min-width: 60px;
+        margin: 10px;
+        background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+        background-size: auto 120%;
+        background-position: center;
+        cursor: pointer;
+        transition: opacity 2.5s ease;
+    }
+
+    .cities .city.active {
+        flex-grow: 10000;
+        transform: scale(1);
+        max-width: 600px;
+        margin: 0px;
+        border-radius: 8px;
+        background-size: auto 100%;
+
+        &:active {
+            transition: opacity 2.5s ease;
+            transform: scale(0.9);
+        }
+
+    }
+
+    .cities .city.active .shadow {
+        box-shadow: inset 0 -120px 120px -120px #1e1e1e, inset 0 -120px 120px -100px #1e1e1e;
+    }
+
+    .cities .city.active .label {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .cities .city.active .label .info>div {
+        left: 0px;
+        opacity: 1;
+    }
+
+    .cities .city:not(.active) {
+        flex-grow: 1;
+        border-radius: 8px;
+    }
+
+    .cities .city:not(.active) .shadow {
+        bottom: -40px;
+        box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+    }
+
+    .cities .city:not(.active) .label {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .cities .city:not(.active) .label .info>div {
+        left: 20px;
+        opacity: 0;
+    }
+
+    .cities .city .shadow {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 180px;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .cities .city .label {
+        display: flex;
+        position: absolute;
+        right: 0px;
+        height: 40px;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+
+    .cities .city .label .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-right: 50px;
+        color: white;
+        white-space: pre;
+    }
+
+    .cities .city .label .info>div {
+        position: relative;
+        transition: 0.5s cubic-bezier(254, 223, 5, 0.95), opacity 0.5s ease-out;
+    }
+
+    .cities .city .label .info .main {
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+    .cities .city .label .info .sub {
+        transition-delay: 0.1s;
+        font-size: 1.2rem;
+    }
+
+    .city-title {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        font-size: 34px;
+        line-height: 1.1em;
+        margin-top: -50px
+    }
+
+    .city-square {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        width: 290px;
+        height: 70%;
+        margin-left: -24px;
+        margin-top: -90px;
+        background-color: #1e1e1ebd;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .city-square.active {
+        width: 0
+    }
+
+    .city-text-less {
+        position: absolute;
+        bottom: 80px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        color: #fff;
+        display: flex;
+        width: 120px;
+        height: 120px;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        opacity: 1;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+
+    .city .city-text-less {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    .city:hover .city-text-less,
+    .city.active .city-text-less {
+        opacity: 0;
+    }
+
+    .footer {
+        display: flex;
+        background-color: #f2f2f2;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+
+    .img-footer {
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .copy {
+        margin: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+    }
+
+    .header {
+        padding: 10px;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .header-icon {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .sir-card {
+        background-color: #fff;
+        justify-content: center;
+        padding: 10px 20px;
+        width: 1247px;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+    .sir-text {
+        color: #002DA1;
+        font-family: Raleway;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    .sir-subtext {
+        color: #000;
+        font-family: Raleway;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .cities {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        overflow: hidden;
+        min-width: 200px;
+        max-width: 60%;
+        height: 400px;
+    }
+
+    .cities .city {
+        position: relative;
+        overflow: hidden;
+        min-width: 60px;
+        margin: 10px;
+        background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+        background-size: auto 120%;
+        background-position: center;
+        cursor: pointer;
+        transition: opacity 2.5s ease;
+        /* transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95); */
+    }
+
+    .cities .city.active {
+        flex-grow: 10000;
+        transform: scale(1);
+        max-width: 600px;
+        margin: 0px;
+        border-radius: 8px;
+        background-size: auto 100%;
+
+        &:active {
+            transition: opacity 2.5s ease;
+            transform: scale(0.9);
+        }
+
+    }
+
+    .cities .city.active .shadow {
+        box-shadow: inset 0 -120px 120px -120px #1e1e1e, inset 0 -120px 120px -100px #1e1e1e;
+    }
+
+    .cities .city.active .label {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .cities .city.active .label .info>div {
+        left: 0px;
+        opacity: 1;
+    }
+
+    .cities .city:not(.active) {
+        flex-grow: 1;
+        border-radius: 8px;
+    }
+
+    .cities .city:not(.active) .shadow {
+        bottom: -40px;
+        box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+    }
+
+    .cities .city:not(.active) .label {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .cities .city:not(.active) .label .info>div {
+        left: 20px;
+        opacity: 0;
+    }
+
+    .cities .city .shadow {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 180px;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .cities .city .label {
+        display: flex;
+        position: absolute;
+        right: 0px;
+        height: 40px;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+
+    .cities .city .label .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-right: 50px;
+        color: white;
+        white-space: pre;
+    }
+
+    .cities .city .label .info>div {
+        position: relative;
+        transition: 0.5s cubic-bezier(254, 223, 5, 0.95), opacity 0.5s ease-out;
+    }
+
+    .cities .city .label .info .main {
+        font-weight: bold;
+        font-size: 2.2rem;
+    }
+
+    .cities .city .label .info .sub {
+        transition-delay: 0.1s;
+        font-size: 1.6rem;
+    }
+
+    .city-title {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        font-size: 34px;
+        line-height: 1.1em;
+        margin-top: -50px
+    }
+
+    .city-square {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        width: 290px;
+        height: 70%;
+        margin-left: -24px;
+        margin-top: -50px;
+        background-color: #1e1e1ebd;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .city-square.active {
+        width: 0
+    }
+
+    .city-text-less {
+        position: absolute;
+        bottom: 80px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        color: #fff;
+        display: flex;
+        width: 120px;
+        height: 120px;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        opacity: 1;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+
+    .city .city-text-less {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    .city:hover .city-text-less,
+    .city.active .city-text-less {
+        opacity: 0;
+    }
+
+    .footer {
+        display: flex;
+        background-color: #f2f2f2;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+
+    .img-footer {
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .copy {
+        margin: auto;
+    }
+
+    .cities .city {
+        transform: translateZ(0);
+      }
+      
+      /* Use CSS transitions with easing */
+      .cities .city {
+        transition: all 0.9s ease;
+      }
+      
+      /* Apply GPU-accelerated properties */
+      .cities .city.active {
+        transform: scale(0.9);
+      }
+      
+      /* Shorten animation duration */
+      .cities .city.active:active {
+        transition: opacity 0.9s ease, transform 0.3s ease;
+        transform: scale(0.9);
+      }
+}
