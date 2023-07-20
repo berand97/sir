@@ -38,7 +38,6 @@ footer {
     .page-content {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         height: 100vh;
         margin: auto;
     }
@@ -46,6 +45,7 @@ footer {
     .header {
         padding: 10px;
         text-align: center;
+        flex-grow: 1;
     }
 
     .header-icon {
