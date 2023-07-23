@@ -50,6 +50,7 @@ footer {
     .header {
         padding: 10px;
         text-align: center;
+        flex-grow: 1;
     }
 
     .header-icon {
@@ -108,7 +109,7 @@ footer {
         position: relative;
         min-width: 60px;
         margin: 10px;
-        background: var(--cityBackground);
+        background: var(--optionBackground);
         background-size: auto 180%;
         background-position: center;
         object-fit: cover;
@@ -151,7 +152,7 @@ footer {
 
     .cities .city .label .info .main {
         font-weight: bold;
-        top: 80px;
+        top: 130px;
         font-size: 1.4rem;
         position: absolute;
         display: -webkit-box;
@@ -311,7 +312,7 @@ footer {
         overflow: hidden;
         min-width: 60px;
         margin: 10px;
-        background: var(--cityBackground, var(--defaultBackground, #e6e9ed));
+        background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
         background-size: auto 120%;
         background-position: center;
         cursor: pointer;
@@ -363,11 +364,6 @@ footer {
     }
 
     .cities .city:not(.active) .label .info>div {
-        left: 20px;
-        opacity: 0;
-    }
-
-    .cities .city:not(.active) .arrow {
         left: 20px;
         opacity: 0;
     }
@@ -476,15 +472,6 @@ footer {
         opacity: 0;
     }
 
-    .arrow {
-        position: absolute;
-        top: 10%;
-        right: 30px;
-        width: 0;
-        height: 0;
-        transform: translateY(-50%);
-    }
-
     .footer {
         display: flex;
         flex-direction: column;
@@ -538,7 +525,7 @@ footer {
         background-color: #fff;
         justify-content: center;
         padding: 10px 20px;
-        width: calc(100% - 40px);
+        width: 1247px;
         max-width: 100%;
         margin: 0 auto;
         border-radius: 8px;
@@ -581,11 +568,12 @@ footer {
         overflow: hidden;
         min-width: 60px;
         margin: 10px;
-        background: var(--cityBackground, var(--defaultBackground, #e6e9ed));
+        background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
         background-size: auto 120%;
         background-position: center;
         cursor: pointer;
         transition: opacity 2.5s ease;
+        /* transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95); */
     }
 
     .cities .city.active {
@@ -637,12 +625,6 @@ footer {
         opacity: 0;
     }
 
-    .cities .city:not(.active)  .arrow {
-        visibility: hidden;
-        left: 20px;
-        opacity: 0;
-    }
-
     .cities .city .shadow {
         position: absolute;
         bottom: 0px;
@@ -678,12 +660,12 @@ footer {
 
     .cities .city .label .info .main {
         font-weight: bold;
-        font-size: 1.4rem;
+        font-size: 2.2rem;
     }
 
     .cities .city .label .info .sub {
         transition-delay: 0.1s;
-        font-size: 0.9rem;
+        font-size: 1.6rem;
     }
 
     .city-title {
@@ -745,15 +727,6 @@ footer {
     .city:hover .city-text-less,
     .city.active .city-text-less {
         opacity: 0;
-    }
-
-    .arrow {
-        position: absolute;
-        top: 10%;
-        right: 30px;
-        width: 0;
-        height: 0;
-        transform: translateY(-50%);
     }
 
     .footer {

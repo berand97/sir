@@ -1,40 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esperanza Radio</title>
-    <link rel="shortcut icon" href="https://files.adventistas.org/institucional/es/2022/10/logo-nt.png"
-        type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <title>Integración con Bootstrap Grid</title>
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/landing.css">
 </head>
 
 <body>
-    <div class="page-content">
-        <header class="header">
-            <img src="./assets/img/logo-radio.png" alt="Icono" class="header-icon">
-        </header>
-        <main class="content">
-            <div class="sir-card">
-                <div class="sir-text" id="textAnimation">
-                    <p>¿Desde qué ciudad nos quieres escuchar?</p>
-                </div>
-                <div class="sir-subtext" id="textAnimation">
-                    <p>Sintoniza tu radio favorita del país</p>
-                </div>
-                <div class="cities">
-                    <div class="city slideUp"
+    <header class="header">
+        <img src="./assets/img/logo-radio.png" alt="Icono" class="header-icon">
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="row cities">
+                <div class="col-sm-12 col-md-3 col-lg-2">
+                    <div class="city"
                         style="--cityBackground:url(https://forbes.co/_next/image?url=https%3A%2F%2Fcdn.forbes.co%2F2020%2F09%2FMedell%C3%ADn-foto-ProColombia.jpg%3Fv%3D20471365&w=1920&q=75);">
                         <div class="shadow"></div>
-                        <div class="city-text-less">
-                            <div class="city-title stroke--white-02">Medellín</div>
-                            <div class="city-square"></div>
-                        </div>
                         <div class="label">
                             <div class="info">
                                 <div class="main">Medellín</div>
@@ -45,13 +31,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="city slideUp"
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2">
+                    <div class="city"
                         style="--cityBackground:url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/a2/58/15/plaza-san-nicolas.jpg?w=700&h=-1&s=1);">
                         <div class="shadow"></div>
-                        <div class="city-text-less">
-                            <div class="city-title stroke--white-02">Cartagena</div>
-                            <div class="city-square"></div>
-                        </div>
                         <div class="label">
                             <div class="info">
                                 <div class="main">Cartagena</div>
@@ -62,13 +46,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="city slideUp"
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2">
+                    <div class="city"
                         style="--cityBackground:url(https://colombia.reportnews.la/wp-content/uploads/sites/2/2021/12/Bucaramanga-@Carlossegs-768x576.jpg);">
                         <div class="shadow"></div>
-                        <div class="city-text-less">
-                            <div class="city-title stroke--white-02">Bucaramanga</div>
-                            <div class="city-square"></div>
-                        </div>
                         <div class="label">
                             <div class="info">
                                 <div class="main">Bucaramanga</div>
@@ -79,13 +61,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="city slideUp"
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2">
+                    <div class="city"
                         style="--cityBackground:url(https://images.pexels.com/photos/14587109/pexels-photo-14587109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
                         <div class="shadow"></div>
-                        <div class="city-text-less">
-                            <div class="city-title stroke--white-02">Barranquilla</div>
-                            <div class="city-square"></div>
-                        </div>
                         <div class="label">
                             <div class="info">
                                 <div class="main">Barranquilla</div>
@@ -98,23 +78,25 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
-            <div class="img-footer">
-                <img src="./assets/img/AWR.png" alt="Imagen 1" class="footer-img">
-                <img src="./assets/img/adventist.svg" alt="Imagen 2" class="footer-img">
-            </div>
-            <div class="copy">
-                &copy;
-                <script>document.write(new Date().getFullYear())</script> UCN. Todos los derechos reservados.
-            </div>
-        </footer>
+        </div>
     </div>
+    <footer class="bg-light">
+        <div class="img-footer">
+            <img src="./assets/img/AWR.png" alt="Imagen 1" class="footer-img">
+            <img src="./assets/img/adventist.svg" alt="Imagen 2" class="footer-img">
+        </div>
+        <div class="copy">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> UCN. Todos los derechos reservados.
+        </div>
+    </footer>
+    <!-- Enlace al archivo JS de jQuery (necesario para ciertas características de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Enlace al archivo JS de Popper (necesario para ciertas características de Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <!-- Enlace al archivo JS de Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
-<script src="./assets/js/scrollreveal.js"></script>
-<script src="./assets/js/main.js"></script>
-<script src="./assets/js/anime.js"></script>
-<script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </html>

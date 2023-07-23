@@ -35,18 +35,41 @@ document.addEventListener("DOMContentLoaded", function () {
     case 2:
       if (window.matchMedia("(max-width: 480px)").matches) {
         citiesContainer.style.height = "400px";
+        card.style.maxWidth = "calc(100% - 40px)";
+      } else if (
+        window.matchMedia("(min-width: 481px) and (max-width: 768px)").matches
+      ) {
+        pageContent.style.height = "80vh";
+        card.style.maxWidth = "calc(100% - 400px)";
       } else {
-        applyStyles("50%", MAX_WIDTH_1024PX, "center");
+        pageContent.style.height = "75vh";
       }
       break;
     case 3:
-      if (window.matchMedia("(max-width: 425px)").matches) {
-        applyStyles("60%", MAX_WIDTH_425PX, undefined, "1200px");
+      if (window.matchMedia("(max-width: 480px)").matches) {
+        citiesContainer.style.height = "450px";
+        card.style.maxWidth = "calc(100% - 40px)";
+      } else if (
+        window.matchMedia("(min-width: 481px) and (max-width: 768px)").matches
+      ) {
+        pageContent.style.height = "80vh";
+        card.style.maxWidth = "calc(100% - 100px)";
       } else {
-        applyStyles("60%", MAX_WIDTH_1024PX, "center");
+        pageContent.style.height = "75vh";
       }
       break;
     default:
+      if (window.matchMedia("(max-width: 480px)").matches) {
+        citiesContainer.style.height = "600px";
+        card.style.maxWidth = "calc(100% - 40px)";
+      } else if (
+        window.matchMedia("(min-width: 481px) and (max-width: 768px)").matches
+      ) {
+        pageContent.style.height = "80vh";
+        card.style.maxWidth = "calc(100% - 100px)";
+      } else {
+        pageContent.style.height = "78vh";
+      }
       break;
   }
 

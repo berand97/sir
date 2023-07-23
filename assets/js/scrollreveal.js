@@ -10,10 +10,11 @@ ScrollReveal().reveal(".fadeIn", {
 ScrollReveal().reveal(".slideUp", {
   delay: 200,
   duration: 800,
-  distance: "50px",
+  distance: "1px",
   origin: "bottom",
   opacity: 0,
   easing: "ease-in-out",
+  reset: true,
 });
 
 ScrollReveal().reveal(".slideDown", {
