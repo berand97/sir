@@ -26,14 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
       applyStyles("10%", MAX_WIDTH_1024PX, "center");
       break;
     case 2:
-      if (window.matchMedia("(max-width: 425px)").matches) {
+      if (window.matchMedia("(max-width: 480px)").matches) {
         applyStyles("50%", MAX_WIDTH_425PX, "center", "800px");
       } else {
         applyStyles("50%", MAX_WIDTH_1024PX, "center");
       }
       break;
     case 3:
-      if (window.matchMedia("(max-width: 425px)").matches) {
+      if (
+        window.matchMedia("(min-width: 481px) and (max-width: 768px)").matches
+      ) {
         applyStyles("60%", MAX_WIDTH_425PX, undefined, "1200px");
       } else {
         applyStyles("60%", MAX_WIDTH_1024PX, "center");
