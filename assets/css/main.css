@@ -37,13 +37,14 @@ footer {
     body, html {
         height: 100%;
         overflow-x: hidden;
-        overflow-y: scroll;
     }
 
     .page-content {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         margin: auto;
+        min-height: 100vh;
     }
 
     .header {
@@ -115,18 +116,15 @@ footer {
         cursor: pointer;
     }
 
-
     .cities .city.active .label {
         bottom: 20px;
         left: 20px;
     }
 
-
     .cities .city {
         flex-grow: 1;
         border-radius: 8px;
     }
-
 
     .cities .city .label {
         bottom: 10px;
@@ -154,7 +152,7 @@ footer {
 
     .cities .city .label .info .main {
         font-weight: bold;
-        top: 110px;
+        top: 130px;
         font-size: 1.4rem;
         position: absolute;
         display: -webkit-box;
@@ -217,6 +215,7 @@ footer {
         background-color: #f2f2f2;
         justify-content: space-evenly;
         margin-top: 20px;
+        min-height: 80px;
     }
 
     .img-footer {
