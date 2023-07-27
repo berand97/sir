@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const citiesContainer = document.querySelector(".cities");
   const cities = document.querySelectorAll(".city");
   const footer = document.querySelector("footer");
+  let isHovering = false;
 
   function applyStyles(
     maxWidthCitiesContainer,
@@ -23,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  console.log(cities.length);
   switch (cities.length) {
     case 1:
       if (window.matchMedia("(max-width: 480px)").matches) {
@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         card.style.maxWidth = "calc(100% - 400px)";
       } else {
         pageContent.style.height = "75vh";
+        card.style.maxWidth = "calc(100% - 100px)";
       }
       break;
     case 3:
@@ -68,27 +69,28 @@ document.addEventListener("DOMContentLoaded", function () {
         pageContent.style.height = "80vh";
         card.style.maxWidth = "calc(100% - 100px)";
       } else {
-        pageContent.style.height = "78vh";
+        card.style.maxWidth = "calc(100% - 200px)";
+        pageContent.style.height = "70vh";
       }
       break;
   }
 
   function setActiveCity(city) {
     cities.forEach(function (cityElement) {
-      cityElement.classList.remove("active");
+      if (cityElement !== city) {
+        // Añade esta condición para activar solo si no está activo
+        cityElement.classList.remove("active");
+      }
     });
     city.classList.add("active");
   }
 
   cities.forEach(function (city) {
-    city.classList.remove("active");
-
-    city.addEventListener("mouseover", function () {
-      setActiveCity(this);
-    });
-
-    city.addEventListener("mouseout", function () {
-      this.classList.remove("active");
+    city.addEventListener("mouseenter", function () {
+      if (!city.classList.contains("active")) {
+        // Añade esta condición para activar solo si no está activo
+        setActiveCity(this);
+      }
     });
   });
 });

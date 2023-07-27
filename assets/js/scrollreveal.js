@@ -14,7 +14,6 @@ ScrollReveal().reveal(".slideUp", {
   origin: "bottom",
   opacity: 0,
   easing: "ease-in-out",
-  reset: true,
 });
 
 ScrollReveal().reveal(".slideDown", {
@@ -171,3 +170,5 @@ ScrollReveal().reveal(".fall", {
   opacity: 0,
   easing: "ease-in-out",
 });
+
+ScrollReveal().reveal({ reset: true });
