@@ -14,20 +14,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
-<body>
-    <div class="page-content">
-        <header class="header">
-            <img src="./assets/img/logo-radio.png" alt="Icono" class="header-icon">
-        </header>
-        <main class="content">
-            <div class="sir-card">
-                <div class="sir-container">
-                    <div class="sir-text" id="textAnimation">
-                        <p>Sintoniza <br> tu radio <br> favorita</p>
-                    </div>
-                    <div class="cities">
-                        <div class="city slideUp"
-                            style="--cityBackground:url(https://forbes.co/_next/image?url=https%3A%2F%2Fcdn.forbes.co%2F2020%2F09%2FMedell%C3%ADn-foto-ProColombia.jpg%3Fv%3D20471365&w=1920&q=75);">
+<body class="page-content">
+    <header class="header">
+        <img src="./assets/img/logo-radio.png" alt="Icono" class="header-icon">
+    </header>
+    <main class="content">
+        <div class="sir-card">
+            <div class="sir-container">
+                <div class="sir-text" id="textAnimation">
+                    <span>Sintoniza tu radio favorita</span>
+                </div>
+                <div class="cities">
+                    <div class="city slideUp"
+                        style="--cityBackground:url(https://forbes.co/_next/image?url=https%3A%2F%2Fcdn.forbes.co%2F2020%2F09%2FMedell%C3%ADn-foto-ProColombia.jpg%3Fv%3D20471365&w=1920&q=75);">
+                        <a href="./ciudad.html">
                             <div class="shadow"></div>
                             <div class="city-text-less">
                                 <div class="city-title stroke--white-02">Medellín</div>
@@ -35,16 +35,18 @@
                             </div>
                             <div class="label">
                                 <div class="info">
-                                    <div class="main">Medellín</div>
-                                    <div class="sub">1047 AM</div>
+                                    <span class="name-radio">Medellín</span>
+                                    <span class="dial-radio">1047 AM</span>
                                 </div>
                                 <div class="arrow">
                                     <img src="./assets/img/right-arrow.svg" alt="" srcset="">
                                 </div>
                             </div>
-                        </div>
-                        <div class="city slideUp"
-                            style="--cityBackground:url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/a2/58/15/plaza-san-nicolas.jpg?w=700&h=-1&s=1);">
+                        </a>
+                    </div>
+                    <div class="city slideUp"
+                        style="--cityBackground:url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/a2/58/15/plaza-san-nicolas.jpg?w=700&h=-1&s=1);">
+                        <a href="./ciudad.html">
                             <div class="shadow"></div>
                             <div class="city-text-less">
                                 <div class="city-title stroke--white-02">Cartagena</div>
@@ -52,63 +54,29 @@
                             </div>
                             <div class="label">
                                 <div class="info">
-                                    <div class="main">Cartagena</div>
-                                    <div class="sub">105.7 AM</div>
+                                    <span class="name-radio">Cartagena</span>
+                                    <span class="dial-radio">105.7 AM</span>
                                 </div>
                                 <div class="arrow">
                                     <img src="./assets/img/right-arrow.svg" alt="" srcset="">
                                 </div>
                             </div>
-                        </div>
-                        <div class="city slideUp"
-                            style="--cityBackground:url(https://colombia.reportnews.la/wp-content/uploads/sites/2/2021/12/Bucaramanga-@Carlossegs-768x576.jpg);">
-                            <div class="shadow"></div>
-                            <div class="city-text-less">
-                                <div class="city-title stroke--white-02">Bucaramanga</div>
-                                <div class="city-square"></div>
-                            </div>
-                            <div class="label">
-                                <div class="info">
-                                    <div class="main">Bucaramanga</div>
-                                    <div class="sub">70.5 AM</div>
-                                </div>
-                                <div class="arrow">
-                                    <img src="./assets/img/right-arrow.svg" alt="" srcset="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="city slideUp"
-                            style="--cityBackground:url(https://images.pexels.com/photos/14587109/pexels-photo-14587109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
-                            <div class="shadow"></div>
-                            <div class="city-text-less">
-                                <div class="city-title stroke--white-02">Barranquilla</div>
-                                <div class="city-square"></div>
-                            </div>
-                            <div class="label">
-                                <div class="info">
-                                    <div class="main">Barranquilla</div>
-                                    <div class="sub">101.9 AM</div>
-                                </div>
-                                <div class="arrow">
-                                    <img src="./assets/img/right-arrow.svg" alt="" srcset="">
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
-            <div class="img-footer">
-                <img src="./assets/img/AWR.png" alt="Imagen 1" class="footer-img">
-                <img src="./assets/img/adventist.svg" alt="Imagen 2" class="footer-img">
-            </div>
-            <div class="copy">
-                &copy;
-                <script>document.write(new Date().getFullYear())</script> UCN. Todos los derechos reservados.
-            </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="img-footer">
+            <img src="./assets/img/AWR.png" alt="Imagen 1" class="footer-img">
+            <img src="./assets/img/adventist.svg" alt="Imagen 2" class="footer-img">
+        </div>
+        <div class="copy">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> UCN. Todos los derechos reservados.
+        </div>
+    </footer>
 </body>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 <script src="./assets/js/scrollreveal.js"></script>
