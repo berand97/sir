@@ -4,8 +4,8 @@ const audioElement = document.querySelector("audio");
 const volumeSlider = document.getElementById("volumeSlider");
 const volumeFill = document.getElementById("volumeFill");
 const play = document.querySelector("#play"),
-  playIcon = `<img src="../../assets/img/svg/play-circle-white.svg" width="50">`,
-  pauseIcon = `<img src="../../assets/img/svg/pause-circle-white.svg" width="50">`;
+  playIcon = `<img src="../img/svg/play-circle-white.svg" width="50">`,
+  pauseIcon = `<img src="../img/svg/pause-circle-white.svg" width="50">`;
 
 function reload() {
   audio.load();
