@@ -591,13 +591,13 @@ nav {
         display: none;
     }
     footer {
-        margin-bottom: 1px;
+        margin-bottom: 100px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
     footer {
-        margin-bottom: 5px;
+        margin-bottom: 100px;
     }
 }
 
