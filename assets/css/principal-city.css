@@ -594,7 +594,7 @@ nav {
   }
   
   .notice-container img {
-    width: 370px;
+    width: calc(100% - 5px);
     height: 300px;
     left: 0px;
     top: 0px;
@@ -603,7 +603,7 @@ nav {
   }
   
   .notice-container .background {
-    width: 370px;
+    width: calc(100% - 5px);
     height: 300px;
     left: 0px;
     top: 0px;
@@ -618,7 +618,7 @@ nav {
 
   .notice-container .title {
     left: 7px;
-    top: 130px;
+    top: 220px;
     position: absolute;
     color: white;
     font-size: 0.9rem;
@@ -635,7 +635,7 @@ nav {
   }
   
   .podcast-container img {
-    width: 360px;
+    width: calc(100% - 5px);
     height: 300px;
     left: 0px;
     top: 0px;
@@ -644,7 +644,7 @@ nav {
   }
   
   .podcast-container .background {
-    width: 360px;
+    width: calc(100% - 5px);
     height: 300px;
     left: 0px;
     top: 0px;
@@ -655,6 +655,18 @@ nav {
       rgba(0, 45, 161, 0.8) 100%
     );
     border-radius: 10px;
+  }
+
+  .notice-container .date {
+    left: 8px;
+    top: 256px;
+    position: absolute;
+    color: #ffd705;
+    font-size: 0.8rem;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 15px;
+    word-wrap: break-word;
   }
 
   .sir-team img {
