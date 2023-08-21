@@ -193,8 +193,8 @@ nav {
 }
 
 .sir-team img {
-  width: 200px;
-  height: 211.864px;
+  width: 220px;
+  height: 280px;
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -202,8 +202,8 @@ nav {
 
 .team-background {
   position: absolute;
-  width: 200px;
-  height: 211.864px;
+  width: 220px;
+  height: 280px;
   border-radius: 10px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #002da1 100%);
   top: 0;
