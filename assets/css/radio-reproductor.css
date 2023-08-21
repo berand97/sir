@@ -355,11 +355,6 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 @media screen and (min-width: 1024px) {
-
-    #menu {
-        width: 100%;
-        margin-left: 66px
-    }
     .reproductor-radio {
         width: 100%;
         background: #193fa0;
@@ -367,6 +362,9 @@ audio::-webkit-media-controls-current-time-display {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: fixed;
+        bottom: 0;
+        height: 110px;
     }
 
     .program-timeline {

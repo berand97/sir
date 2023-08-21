@@ -4,18 +4,22 @@ const audioElement = document.querySelector("audio");
 const volumeSlider = document.getElementById("volumeSlider");
 const volumeFill = document.getElementById("volumeFill");
 const play = document.querySelector("#play"),
-  playIcon = `<img src="../../../sir/assets/img/svg/play-circle-white.svg" width="50">`,
-  pauseIcon = `<img src="../../../sir/assets/img/svg/pause-circle-white.svg" width="50">`;
+  playIcon = `<img src="../../assets/img/svg/play-circle-white.svg" width="50">`,
+  pauseIcon = `<img src="../../assets/img/svg/pause-circle-white.svg" width="50">`;
 
 function reload() {
   audio.load();
   setTimeout(() => (timeline.value = 0), 10);
 }
 
+function startAudioPlayback() {
+  audio.play();
+  play.innerHTML = pauseIcon;
+}
+
 function toggleAudio() {
   if (audio.paused) {
-    audio.play();
-    play.innerHTML = pauseIcon;
+    startAudioPlayback();
   } else {
     audio.pause();
     play.innerHTML = playIcon;
@@ -57,10 +61,6 @@ volumeSlider.addEventListener("click", function (event) {
   setVolume(newVolume);
 });
 
-setVolume(1);
+setVolume(0.5);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const playButton = document.querySelector("#play");
-  toggleAudio();
-  playButton.innerHTML = pauseIcon;
-});
+document.addEventListener("DOMContentLoaded", function () {});
