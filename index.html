@@ -4,84 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esperanza Radio</title>
-    <link rel="shortcut icon" href="https://files.adventistas.org/institucional/es/2022/10/logo-nt.png"
-        type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <title>Esperanza Radio Colombia</title>
+    <link rel="stylesheet" href="./assets/css/landing.css">
 </head>
 
-<body class="page-content">
-    <header class="header">
-        <img src="./assets/img/logo-radio.png" alt="Icono" class="header-icon">
-    </header>
-    <main class="content">
-        <div class="sir-card">
-            <div class="sir-container">
-                <div class="sir-text" id="textAnimation">
-                    <span>Sintoniza tu radio favorita</span>
-                </div>
-                <div class="cities">
-                    <div class="city slideUp"
-                        style="--cityBackground:url(https://forbes.co/_next/image?url=https%3A%2F%2Fcdn.forbes.co%2F2020%2F09%2FMedell%C3%ADn-foto-ProColombia.jpg%3Fv%3D20471365&w=1920&q=75);">
-                        <a href="./ciudad.html">
-                            <div class="shadow"></div>
-                            <div class="city-text-less">
-                                <div class="city-title stroke--white-02">Medellín</div>
-                                <div class="city-square"></div>
-                            </div>
-                            <div class="label">
-                                <div class="info">
-                                    <span class="name-radio">Medellín</span>
-                                    <span class="dial-radio">1047 AM</span>
-                                </div>
-                                <div class="arrow">
-                                    <img src="./assets/img/right-arrow.svg" alt="" srcset="">
-                                </div>
-                            </div>
-                        </a>
+<body class="layout">
+    <div class="header">
+        <img src="./assets/img/logo-radio.png" alt="">
+    </div>
+    <div class="main">
+        <div class="card">
+            <p class="card__text"> Sintoniza tu radio favorita</p>
+            <div class="cities">
+                <a href="./ciudad.html" class="city"
+                    style="--city__image:url(https://www.ngenespanol.com/wp-content/uploads/2022/09/medellin-la-ciudad-colombiana-de-la-eterna-primavera.jpg)">
+                    <div class="city__bottom__shadow"></div>
+                    <div class="city__shadow">
+                        <span class="city__radio__title">Medellin</span>
                     </div>
-                    <div class="city slideUp"
-                        style="--cityBackground:url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/a2/58/15/plaza-san-nicolas.jpg?w=700&h=-1&s=1);">
-                        <a href="./ciudad.html">
-                            <div class="shadow"></div>
-                            <div class="city-text-less">
-                                <div class="city-title stroke--white-02">Cartagena</div>
-                                <div class="city-square"></div>
-                            </div>
-                            <div class="label">
-                                <div class="info">
-                                    <span class="name-radio">Cartagena</span>
-                                    <span class="dial-radio">105.7 AM</span>
-                                </div>
-                                <div class="arrow">
-                                    <img src="./assets/img/right-arrow.svg" alt="" srcset="">
-                                </div>
-                            </div>
-                        </a>
+                    <div class="city__radio__info">
+                        <div class="city__radio__info_detail">
+                            <span class="city__radio__info_detail__name">Medellin</span>
+                            <span class="city__radio__info_detail__dial">1470 AM</span>
+                        </div>
+                        <div class="city__radio__info__arrow">
+                            <img src="./assets/img/right-arrow.svg" alt="" srcset="">
+                        </div>
                     </div>
-                </div>
+                </a>
+                <a href="./ciudad.html" class="city"
+                    style="--city__image:url(https://investinsantander.co/imagenes/vco_noticias/noti_5bcc58df0a2543358de9a370b401d5b6028e407d.jpg)">
+                    <div class="city__bottom__shadow"></div>
+                    <div class="city__shadow">
+                        <span class="city__radio__title">Bucarmanga</span>
+                    </div>
+                    <div class="city__radio__info">
+                        <div class="city__radio__info_detail">
+                            <span class="city__radio__info_detail__name">Bucarmanga</span>
+                            <span class="city__radio__info_detail__dial">1420 AM</span>
+                        </div>
+                        <div class="city__radio__info__arrow">
+                            <img src="./assets/img/right-arrow.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="img-footer">
-            <img src="./assets/img/AWR.png" alt="Imagen 1" class="footer-img">
-            <img src="./assets/img/adventist.svg" alt="Imagen 2" class="footer-img">
+    </div>
+    <div class="footer">
+        <div class="footer__logos">
+            <img src="./assets/img/logos/awr.svg" alt="Imagen 1" width="120" style="margin-top: 10px;">
+            <img src="./assets/img/logos/iasd.svg" alt="Imagen 2" width="80">
         </div>
         <div class="copy">
             &copy;
             <script>document.write(new Date().getFullYear())</script> UCN. Todos los derechos reservados.
         </div>
-    </footer>
+    </div>
 </body>
-<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-<script src="./assets/js/scrollreveal.js"></script>
-<script src="./assets/js/anime.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="./assets/js/main.js"></script>
+
+<script>
+    const city = document.querySelectorAll(".city");
+
+    city.forEach(function (element) {
+        element.addEventListener("mouseover", function () {
+            city.forEach(function (element) {
+                element.classList.remove("active");
+            });
+            this.classList.add("active");
+        });
+
+        element.addEventListener("mouseout", function () {
+            this.classList.remove("active");
+        });
+    });
+</script>
 
 </html>
