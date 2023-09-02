@@ -17,6 +17,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 footer {
@@ -514,7 +515,7 @@ nav {
 /* Team */
 
 .team__card {
-  max-width: 720px;
+  max-width: 1140px;
   border-radius: 10px;
   padding: 15px;
   margin-top: 15px;
@@ -556,10 +557,9 @@ nav {
 .team__item__background {
   position: absolute;
   width: 220px;
-  height: 280px;
+  height: 290px;
   border-radius: 10px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #002da1 100%);
-  top: 1465px;
   z-index: 2;
 }
 
@@ -1113,7 +1113,7 @@ audio::-webkit-media-controls-current-time-display {
 .reproductor__content__controls__volumen__fill {
   height: 100%;
   border-radius: 5px;
-  background-color: #FFCB00;
+  background-color: #ffcb00;
   width: 100%;
 }
 
@@ -1183,4 +1183,76 @@ audio::-webkit-media-controls-current-time-display {
   width: 100px;
   height: 100px;
   border-radius: 8px;
+}
+
+/* about-us detail */
+
+.city__about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 1140px;
+  margin-top: 100px;
+}
+
+.city__about__card {
+  max-width: 1140px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px 0px rgba(35, 33, 33, 0.203);
+}
+
+.city__about__card__title {
+  font-size: 1.6rem;
+  line-height: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.city__about__card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.city__about__card__content__image {
+  width: 370px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: lightgray 50%;
+}
+
+.city__about__card__content__history {
+  width: 339px;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-around;
+}
+
+.city__about__card__content__history__title {
+  color: #181818;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.city__about__card__content__history__description {
+  color: #181818;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.card__width__container {
+  width: 1440px !important;
 }
