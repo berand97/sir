@@ -1999,6 +1999,24 @@ audio::-webkit-media-controls-current-time-display {
     height: 300px;
   }
 
+  #home .team__card {
+    width: 100% !important;
+  }
+
+  #home .team__item {
+    width: 100% !important;
+  }
+
+  #home .team__item__background {
+    width: 76% !important;
+    height: 356px;
+  }
+
+  #home .team__item__image {
+    width: 100% !important;
+    height: fit-content;
+  }
+
   .team__card {
     width: calc(100% - 10px);
   }
