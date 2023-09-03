@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Esperanza Colombia Radio</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link href="./assets/css/sir.css" rel="stylesheet" type="text/css">
-    <link href="./assets/css/blog.css" rel="stylesheet" type="text/css">
-    <link href="./assets/css/radio-reproductor.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick.theme.css">
+    <link rel="stylesheet" href="./assets/css/radio-reproductor.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top" >
+        <div class="container d-flex justify-content-center">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="https://www.esperanzacolombiaradio.com/website/layout/assets/images/logoRadio.png" alt=""
-                    srcset="" width="180">
+                    srcset="" width="150">
             </a>
             <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
                 data-target="#menu">
                 <img src="./assets/img/svg/menu.svg" alt="Menú" class="custom-navbar-icon" width="50">
             </button>
-            <div class="collapse collapse navbar-collapse flex-lg-row flex-md-column justify-content-between" id="menu">
+            <div class="navbar__radio__info">
+                <div class="navbar__radio__info__detail">
+                    <span class="navbar__radio__info__detail__dial">1470 AM</span>
+                    <span class="navbar__radio__info__detail__city__name">Cartagena</span>
+                </div>
+                <div>
+                    <img src="./assets/img/svg/radio-tower.svg" alt="" srcset="" width="30">
+                </div>
+            </div>
+            <div class="collapse collapse navbar-collapse flex-lg-row flex-md-column" id="menu">
                 <ul class="navbar-nav mr-auto pl-lg-4">
-                    <li class="nav-item px-lg-2 dropdown d-menu">
+                    <li class="nav-item px-lg-1 dropdown d-menu">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <span class="d-inline-block d-lg-none icon-width">
@@ -36,128 +41,47 @@
                             <a class="dropdown-item" href="#">Medellin</a>
                         </div>
                     </li>
-                    <li class="nav-item px-lg-2"> <a class="nav-link" href="#"> <span
+                    <li class="nav-item px-lg-1"> <a class="nav-link" href="#"> <span
                                 class="d-inline-block d-lg-none icon-width"><i
                                     class="fas fa-home"></i></span>Nosotros</a>
                     </li>
-                    <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span
+                    <li class="nav-item px-lg-1"> <a class="nav-link" href="#"><span
                                 class="d-inline-block d-lg-none icon-width"><i
                                     class="fas fa-spa"></i></span>Prográmate</a>
                     </li>
-                    <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span
+                    <li class="nav-item px-lg-1"> <a class="nav-link" href="#"><span
                                 class="d-inline-block d-lg-none icon-width"><i
                                     class="far fa-user"></i></i></span>Programas</a>
                     </li>
-                    <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span
+                    <li class="nav-item px-lg-1"> <a class="nav-link" href="#"><span
                                 class="d-inline-block d-lg-none icon-width"><i
                                     class="far fa-envelope"></i></span>blog</a>
                     </li>
-                    <li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span
+                    <li class="nav-item px-lg-1"> <a class="nav-link" href="#"><span
                                 class="d-inline-block d-lg-none icon-width"><i
                                     class="far fa-envelope"></i></span>Noticias</a>
                     </li>
-                    <li class="nav-item px-lg-2">
+                    <li class="nav-item px-lg-1">
                         <button type="button" class="btn btn-warning">Donar</button>
                     </li>
-                    <li class="nav-item px-lg-2">
+                    <li class="nav-item px-lg-1">
                 </ul>
-                <div class="radio-info">
-                    <div class="radio-dial-container">
-                        <span class="dial-info">1470 AM</span>
-                        <span class="city-radio-info">Medellin</span>
-                    </div>
-                    <div>
-                        <img src="./assets/img/svg/radio-tower.svg" alt="" srcset="" width="30">
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
-    <main class="container">
-        <div class="blog__category__title m-3">
+    <main class="container blog__container">
+        <div class="blog__category__title">
             Blog</div>
         <div class="blog">
-            <div class="blog__card">
-                <img class="blog__card__image" src="https://via.placeholder.com/356x200" />
-                <div class="blog__card__background">
+            <a href="./detalle-blog.html" class="blog__card__item">
+                <img class="blog__card__item__image" src="https://via.placeholder.com/356x200" />
+                <div class="blog__card__item__background">
                 </div>
-                <p class="blog__card_title">
+                <p class="blog__card__item__title">
                     Jóvenes adventistas demuestran su compromiso</p>
-                <quote class="blog__card__date">
+                <quote class="blog__card__item__date">
                     2023/07/01</quote>
-            </div>
-            <div class="blog__card">
-                <img class="blog__card__image" src="https://via.placeholder.com/356x200" />
-                <div class="blog__card__background">
-                </div>
-                <p class="blog__card_title">
-                    Jóvenes adventistas demuestran su compromiso</p>
-                <quote class="blog__card__date">
-                    2023/07/01</quote>
-            </div>
-            <div class="blog__card">
-                <img class="blog__card__image" src="https://via.placeholder.com/356x200" />
-                <div class="blog__card__background">
-                </div>
-                <p class="blog__card_title">
-                    Jóvenes adventistas demuestran su compromiso</p>
-                <quote class="blog__card__date">
-                    2023/07/01</quote>
-            </div>
-            <div class="blog__card">
-                <img class="blog__card__image" src="https://via.placeholder.com/356x200" />
-                <div class="blog__card__background">
-                </div>
-                <p class="blog__card_title">
-                    Jóvenes adventistas demuestran su compromiso</p>
-                <quote class="blog__card__date">
-                    2023/07/01</quote>
-            </div>
-            <div class="blog__card">
-                <img class="blog__card__image" src="https://via.placeholder.com/356x200" />
-                <div class="blog__card__background">
-                </div>
-                <p class="blog__card_title">
-                    Jóvenes adventistas demuestran su compromiso</p>
-                <quote class="blog__card__date">
-                    2023/07/01</quote>
-            </div>
-            <div class="blog__card">
-                <img class="blog__card__image" src="https://via.placeholder.com/356x200" />
-                <div class="blog__card__background">
-                </div>
-                <p class="blog__card_title">
-                    Jóvenes adventistas demuestran su compromiso</p>
-                <quote class="blog__card__date">
-                    2023/07/01</quote>
-            </div>
-            <div class="blog__card">
-                <img class="blog__card__image" src="https://via.placeholder.com/356x200" />
-                <div class="blog__card__background">
-                </div>
-                <p class="blog__card_title">
-                    Jóvenes adventistas demuestran su compromiso</p>
-                <quote class="blog__card__date">
-                    2023/07/01</quote>
-            </div>
-            <div class="blog__card">
-                <img class="blog__card__image" src="https://via.placeholder.com/356x200" />
-                <div class="blog__card__background">
-                </div>
-                <p class="blog__card_title">
-                    Jóvenes adventistas demuestran su compromiso</p>
-                <quote class="blog__card__date">
-                    2023/07/01</quote>
-            </div>
-            <div class="blog__card">
-                <img class="blog__card__image" src="https://via.placeholder.com/356x200" />
-                <div class="blog__card__background">
-                </div>
-                <p class="blog__card_title">
-                    Jóvenes adventistas demuestran su compromiso</p>
-                <quote class="blog__card__date">
-                    2023/07/01</quote>
-            </div>
+            </a>
         </div>
     </main>
     <div class="whatsapp__button__float">
@@ -196,8 +120,8 @@
                                 alt="" srcset="" width="30">
                             <p>| Síguenos</p>
                         </div>
-                        <div class="terms-privacy">
-                            <a href="">Terms</a> | <a href="">Privacy</a>
+                        <div class="Términos-Privacidad">
+                            <a href="">Términos</a> | <a href="">Privacidad</a>
                         </div>
                         <div class="copy">
                             <p>© 2023 UCN. All rights reserved.</p>

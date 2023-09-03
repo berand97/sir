@@ -521,7 +521,7 @@ nav {
   margin: 0;
 }
 
-.terms-privacy {
+.Términos-Privacidad {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -529,7 +529,7 @@ nav {
   gap: 10px;
 }
 
-.terms-privacy a {
+.Términos-Privacidad a {
   color: #000;
 }
 
