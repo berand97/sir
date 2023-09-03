@@ -21,6 +21,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+header {
+  margin-top: 100px;
+}
+
 main {
   min-height: 60vh !important;
 }
@@ -34,8 +38,14 @@ footer {
   background-color: #ffd705 !important;
 }
 
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 #menu {
-  margin-left: 80px;
+  padding-left: 30px;
 }
 
 .nav-link {
@@ -50,204 +60,6 @@ footer {
   border-radius: 10px;
   background: #f9f9f9 !important;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-}
-
-/* Landing */
-
-.landing__main {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-}
-
-.landing__footer {
-  grid-area: footer;
-  background-color: #f2f2f2;
-}
-
-.landing__layout {
-  overflow-x: hidden;
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 15px;
-  background-color: #2c4e9d;
-  font-family: "Raleway", sans-serif;
-}
-
-.landing__header {
-  grid-area: header;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.landing__header img {
-  width: 300px;
-}
-
-.landing__main {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-}
-
-.landing__card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  min-width: 400px;
-  max-width: 1900px;
-  margin: auto;
-  border-radius: 10px;
-  height: 500px;
-  padding: 15px;
-  position: relative;
-}
-
-.landing__card__text {
-  display: flex;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 38px;
-  color: #181818;
-  margin: auto;
-  text-align: center;
-}
-
-.landing__card__cities {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: center;
-  overflow: hidden;
-  min-width: 200px;
-  gap: 15px;
-  width: calc(100% - 100px);
-  height: calc(100% - 15px);
-}
-
-.landing__card__cities .landing__card__city {
-  position: relative;
-  overflow: hidden;
-  min-width: 150px;
-  border-radius: 10px;
-  background: var(--city__image);
-  background-size: auto 120%;
-  background-position: center;
-  cursor: pointer;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-
-.city__shadow {
-  background-color: #1e1e1ebd;
-  left: 0px;
-  top: 400px;
-  height: 50px;
-  width: 250px;
-  position: absolute;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
-  color: white;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 32px;
-  word-wrap: break-word;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-.city__radio__title {
-  color: #fff;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-  transform: rotate(-90deg);
-  padding: 15px;
-}
-
-.city__radio__info:not(.active) {
-  display: none;
-}
-
-.active {
-  flex-grow: 10000;
-  transform: scale(1);
-  max-width: 600px;
-  margin: 0px;
-  background-size: auto 100%;
-  box-shadow: inset 0 -120px 120px -120px black,
-    inset 0 -120px 120px -100px black;
-  .city__radio__info {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: auto;
-    margin-right: 50px;
-    color: white;
-    white-space: pre;
-
-    .city__radio__info_detail {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-end;
-      margin-left: auto;
-      margin-right: 50px;
-      color: white;
-      white-space: pre;
-
-      .city__radio__info_detail__name {
-        position: absolute;
-        top: 85%;
-        bottom: 0;
-        transition-delay: 0.1s;
-        font-weight: bold;
-        font-size: 24px;
-      }
-
-      .city__radio__info_detail__dial {
-        position: absolute;
-        bottom: 10px;
-        transition-delay: 0.1s;
-        font-size: 1.2rem;
-      }
-    }
-
-    .city__radio__info__arrow {
-      position: absolute;
-      bottom: 0;
-      right: 15px;
-      transition-delay: 0.1s;
-      font-size: 1.2rem;
-    }
-  }
-}
-
-.landing__footer {
-  grid-area: footer;
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 5px;
-
-  .landing__footer__logos {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-  }
-
-  .copy {
-    margin: auto;
-  }
 }
 
 /* General style of city */
@@ -281,8 +93,6 @@ nav {
 
 .navbar__radio__info__detail__dial {
   color: #181818;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Raleway;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -291,8 +101,6 @@ nav {
 
 .navbar__radio__info__detail__city__name {
   color: #2d4e9d;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Raleway;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -906,10 +714,9 @@ nav {
 
 .footer-logos {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
 }
 
 .call-to-action {
@@ -958,7 +765,7 @@ nav {
   margin: 0;
 }
 
-.Términos-Privacidad {
+.terms-privacy {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -966,7 +773,7 @@ nav {
   gap: 10px;
 }
 
-.Términos-Privacidad a {
+.terms-privacy a {
   color: #000;
 }
 
@@ -1261,19 +1068,16 @@ audio::-webkit-media-controls-current-time-display {
 
 .city__about__card__content__history__title {
   color: #181818;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-style: normal;
   font-weight: bold;
 }
 
 .city__about__card__content__history__description {
   color: #181818;
-  font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 15px;
 }
 
 /* schedule page */

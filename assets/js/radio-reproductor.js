@@ -3,9 +3,10 @@ const timeline = document.querySelector(".timeline");
 const audioElement = document.querySelector("audio");
 const volumeSlider = document.getElementById("volumeSlider");
 const volumeFill = document.getElementById("volumeFill");
-const play = document.querySelector("#play"),
-  playIcon = `<img src="../../../sir/assets/img/svg/play-circle-white.svg" width="50">`,
-  pauseIcon = `<img src="../../../sir/assets/img/svg/pause-circle-white.svg" width="50">`;
+const play = document.querySelector("#play");
+const baseUrl = window.location.origin + "/assets/img/svg";
+(playIcon = `<img src="${baseUrl}/play-circle-white.svg" width="50">`),
+  (pauseIcon = `<img src="${baseUrl}/pause-circle-white.svg" width="50">`);
 
 function reload() {
   audio.load();
@@ -63,4 +64,6 @@ volumeSlider.addEventListener("click", function (event) {
 
 setVolume(0.5);
 
-document.addEventListener("DOMContentLoaded", function () {});
+document.addEventListener("DOMContentLoaded", function () {
+  startAudioPlayback();
+});
