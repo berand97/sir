@@ -21,6 +21,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+main {
+  min-height: 60vh !important;
+}
+
 footer {
   margin-bottom: 130px;
 }
@@ -1607,6 +1611,7 @@ audio::-webkit-media-controls-current-time-display {
   border-radius: 10px;
   background: #ffffff;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  min-height: min-content;
 }
 
 .blog__category__title {
@@ -1622,7 +1627,7 @@ audio::-webkit-media-controls-current-time-display {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  min-height: 60vh;
+  min-height: min-content;
 }
 
 .blog__card__item {
@@ -2070,6 +2075,7 @@ audio::-webkit-media-controls-current-time-display {
     margin-top: 100px;
     margin-bottom: 100px;
     grid-gap: 15px;
+    min-height: 80vh;
   }
 
   .program__card__item {
