@@ -1855,6 +1855,7 @@ audio::-webkit-media-controls-current-time-display {
 }
 
 @media screen and (max-width: 768px) {
+
   header {
     margin-top: 50px;
   }
