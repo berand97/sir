@@ -12,67 +12,60 @@
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container" id="navbar">
+        <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="./index.html">
                 <img src="https://www.esperanzacolombiaradio.com/website/layout/assets/images/logoRadio.png" alt=""
                     srcset="" width="150">
             </a>
-            <div class="navbar__radio__info">
-                <div class="navbar__radio__info__detail">
-                    <span class="navbar__radio__info__detail__dial">1470 AM</span>
-                    <span class="navbar__radio__info__detail__city__name">Cartagena</span>
-                </div>
-                <div>
-                    <img src="./assets/img/svg/radio-tower.svg" alt="" srcset="" width="30">
-                </div>
-            </div>
-            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
-                data-target="#menu">
-                <img src="./assets/img/svg/menu.svg" alt="menu" class="custom-navbar-icon" width="50">
-            </button>
-            <div class="collapse collapse navbar-collapse flex-lg-row flex-md-column justify-content-center" id="menu">
-                <ul class="navbar-nav mr-auto pl-lg-4">
+            <div class="collapse collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown d-menu">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <span class="d-inline-block d-lg-none icon-width">
-                            </span>Emisoras
+                        <a class="nav-link" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="navbar__radio__info">
+                                <img src="./assets/img/svg/radio-tower.svg" alt="" srcset="" width="30">
+                                <div class="navbar__radio__info__detail">
+                                    <span class="navbar__radio__info__detail__dial">1470 AM</span>
+                                    <strong class="navbar__radio__info__detail__city__name">Cartagena</strong>
+                                </div>
+                            </div>
                         </a>
                         <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+
                             <a class="dropdown-item" href="#">Medellin</a>
                         </div>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./inicio.html"> <span
-                                class="d-inline-block d-lg-none icon-width"><i
-                                    class="fas fa-home"></i></span>Inicio</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="./nosotros.html"> <span
-                                class="d-inline-block d-lg-none icon-width"><i
+                    <li class="nav-item mt-2"> <a class="nav-link" href="./nosotros.html"> <span
+                                class="d-inline-block d-lg-none"><i
                                     class="fas fa-home"></i></span>Nosotros</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./programate.html"><span
-                                class="d-inline-block d-lg-none icon-width"><i
+                    <li class="nav-item mt-2"> <a class="nav-link" href="./programate.html"><span
+                                class="d-inline-block d-lg-none"><i
                                     class="fas fa-spa"></i></span>Prográmate</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./programas.html"><span
-                                class="d-inline-block d-lg-none icon-width"><i
+                    <li class="nav-item mt-2"> <a class="nav-link" href="./programas.html"><span
+                                class="d-inline-block d-lg-none"><i
                                     class="far fa-user"></i></i></span>Programas</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./blog.html"><span
-                                class="d-inline-block d-lg-none icon-width"><i
+                    <li class="nav-item mt-2"> <a class="nav-link" href="./blog.html"><span
+                                class="d-inline-block d-lg-none"><i
                                     class="far fa-envelope"></i></span>blog</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link"
+                    <li class="nav-item mt-2"> <a class="nav-link"
                             href="https://www.unioncolombiana.org.co/es/noticias/1/union-colombiana-del-norte/"
-                            target="_blank"><span class="d-inline-block d-lg-none icon-width"><i
+                            target="_blank"><span class="d-inline-block d-lg-none"><i
                                     class="far fa-envelope"></i></span>Noticias</a>
                     </li>
                 </ul>
             </div>
             <button type="button" class="btn btn-warning">Donar</button>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                data-target="#menu">
+                <img src="./assets/img/svg/menu.svg" alt="menu" class="custom-navbar-icon" width="50">
+            </button>
         </div>
     </nav>
-    <header class="container py-5 text-center text-white">
+    <header class="container-fluid py-5 text-center text-white">
         <div class="row">
             <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center mb-4">
                 <div class="text-dark text-center">
@@ -95,7 +88,7 @@
             <div class="content__column">
                 <div class="program__card">
                     <p class="program__card__title"> Programas </p>
-                    <div class="program__items splide" aria-label="Splide Basic HTML Example">
+                    <div class="program__items">
                         <div class="program__item">
                             <img class="program__item__image"
                                 src="https://esperanzacolombiaradio.s3-sa-east-1.amazonaws.com/program/1682022092067-MINIATURA_PROGRAMA_VDM.jpg"
@@ -173,22 +166,12 @@
                                     class="podcast__item__inner__dot">
                             </div>
                         </div>
-                        <div class="podcast__item">
-                            <img class="podcast__item__image"
-                                src="https://i1.sndcdn.com/artworks-000453278820-y09fb7-t500x500.jpg"
-                                alt="Placeholder" />
-                            <div class="podcast__item__background"></div>
-                            <div class="podcast__item__circle">
-                                <img src="./assets/img/svg/play-circle-white.svg" alt=""
-                                    class="podcast__item__inner__dot">
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="team__card">
                     <p class="team__card__title">Equipo</p>
                     <div class="team__items">
-                        <div class="team__item" id="home">
+                        <div class="team__item">
                             <img class="team__item__image"
                                 src="https://s3-alpha-sig.figma.com/img/19cb/76ed/e4cd78c828d132648d8cee89b3f38160?Expires=1694390400&Signature=F7pX09Ff1WGb7XGzpxNf6d60zxgxO6Hi9e7Ay2Uof9tyrlt0vfzQuDbf9JoE0iupy3S7V6GHKtxtfKdoHqsVP30dP7FDI3RjvOGsCGMCLCPkm2X2ITld4pp7eLZKFx7ECvQYeO4ppe3dOP8qCwD-MiWI~F3TSs3~JyEetPYVlFmDTPvxmaIG1EP~r7Ez3Un4ThFeROcDqN~RMVcXXFHShYlGb4nc~PBvX7Yutb3DOMRayxwHitSonatTMc2pPzU1moXGa7PE6Se66Z3iCrCzDBpFPz0F-mWWVbvjsiKCE2fK5F~MSZgtGtWcjDBTr~lNjR1OnJr76zqzuZI7uSoUAA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                                 alt="Member" />
@@ -198,7 +181,7 @@
                                 <div class="team__item__detail__job">Dircom</div>
                             </div>
                         </div>
-                        <div class="team__item" id="home">
+                        <div class="team__item">
                             <img class="team__item__image"
                                 src="https://s3-alpha-sig.figma.com/img/9866/f9f3/715b8179b6046c581fa4e9da2ab46132?Expires=1694390400&Signature=Mm0NZg6IvMFnCGtqclPy0C1JU96xiWPyiJ~tlIyuc6~bouP2ggkBJzVBIBMXxe~lc6J7ywvpFTcjOFezoMreePPg2buxGXXUi4cAcQv9wXprT3I9Te7cYKRqDBAwfACBMRAdxs9WFKWCtyeQua29a7NcPZTafd7Gu1nRFNJNea7IjPLQtv0~e3qL9~pCmTHydXRGYBkT7z8COjOnSrszuiaIG8VG2PMZozJxe9ZzXI4FgqqztRMxMzCp7gLnW4vaJM5e7lE7H47WS19b1a6iIGCGbGCPXQkrNlRUaswePjN8ymCeMNbsiSyQzyuhqq17OVhH-5QrblKeZ7VRRKansw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                                 alt="Member" />
@@ -208,7 +191,7 @@
                                 <div class="team__item__detail__job">Productor General</div>
                             </div>
                         </div>
-                        <div class="team__item" id="home">
+                        <div class="team__item">
                             <img class="team__item__image"
                                 src="https://s3-alpha-sig.figma.com/img/8260/1a49/165924b471b2f0fd98466f56a3a00606?Expires=1694390400&Signature=Gbzcqjss-eDzh5T-9JhPI0rJcduqLtivpJXAaohNLeyFRyJ2F73kcmHVQH6kfCSL6lmMAb9UMOPHMla2RgKJ7Mv-qIj~sWk5PyAevJKDqjCgudJEqHbFzizTxfraqANQMengdVPQJNYXVTHT1MgrE5NnLylXizPVtd-KU9M1soIshG18hZdg2dcLNcvLGzr0tSocg4NZxSc5mNrVHHejc0a37qy4ZlJttgJQScO~XDrCpXFu3~L5eHdV3yeBbFBdkDQU9MuTF1uDX6-cbeAzBZJbytUQwdHW5DxKyEX9rWwWf8bF578OuYl~s4wjhNYhefueeI~tqbT10SQq2430HQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                                 alt="Member" />

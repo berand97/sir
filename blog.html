@@ -16,61 +16,52 @@
                 <img src="https://www.esperanzacolombiaradio.com/website/layout/assets/images/logoRadio.png" alt=""
                     srcset="" width="150">
             </a>
-            <div class="navbar__radio__info">
-                <div class="navbar__radio__info__detail">
-                    <span class="navbar__radio__info__detail__dial">1470 AM</span>
-                    <span class="navbar__radio__info__detail__city__name">Cartagena</span>
-                </div>
-                <div>
-                    <img src="./assets/img/svg/radio-tower.svg" alt="" srcset="" width="30">
-                </div>
-            </div>
-            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
-                data-target="#menu">
-                <img src="./assets/img/svg/menu.svg" alt="Menú" class="custom-navbar-icon" width="50">
-            </button>
-            <div class="collapse collapse navbar-collapse flex-lg-row flex-md-column justify-content-between" id="menu">
-                <ul class="navbar-nav mr-auto pl-lg-4">
+            <div class="collapse collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown d-menu">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <span class="d-inline-block d-lg-none icon-width">
-                            </span>Emisoras
+                        <a class="nav-link" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="navbar__radio__info">
+                                <img src="./assets/img/svg/radio-tower.svg" alt="" srcset="" width="30">
+                                <div class="navbar__radio__info__detail">
+                                    <span class="navbar__radio__info__detail__dial">1470 AM</span>
+                                    <strong class="navbar__radio__info__detail__city__name">Cartagena</strong>
+                                </div>
+                            </div>
                         </a>
                         <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+
                             <a class="dropdown-item" href="#">Medellin</a>
                         </div>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./inicio.html"> <span
-                                class="d-inline-block d-lg-none icon-width"><i
-                                    class="fas fa-home"></i></span>Inicio</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="./nosotros.html"> <span
-                                class="d-inline-block d-lg-none icon-width"><i
+                    <li class="nav-item mt-2"> <a class="nav-link" href="./nosotros.html"> <span
+                                class="d-inline-block d-lg-none"><i
                                     class="fas fa-home"></i></span>Nosotros</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./programate.html"><span
-                                class="d-inline-block d-lg-none icon-width"><i
+                    <li class="nav-item mt-2"> <a class="nav-link" href="./programate.html"><span
+                                class="d-inline-block d-lg-none"><i
                                     class="fas fa-spa"></i></span>Prográmate</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./programas.html"><span
-                                class="d-inline-block d-lg-none icon-width"><i
+                    <li class="nav-item mt-2"> <a class="nav-link" href="./programas.html"><span
+                                class="d-inline-block d-lg-none"><i
                                     class="far fa-user"></i></i></span>Programas</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./blog.html"><span
-                                class="d-inline-block d-lg-none icon-width"><i
+                    <li class="nav-item mt-2"> <a class="nav-link" href="./blog.html"><span
+                                class="d-inline-block d-lg-none"><i
                                     class="far fa-envelope"></i></span>blog</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link"
+                    <li class="nav-item mt-2"> <a class="nav-link"
                             href="https://www.unioncolombiana.org.co/es/noticias/1/union-colombiana-del-norte/"
-                            target="_blank"><span class="d-inline-block d-lg-none icon-width"><i
+                            target="_blank"><span class="d-inline-block d-lg-none"><i
                                     class="far fa-envelope"></i></span>Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-warning">Donar</button>
                     </li>
                 </ul>
             </div>
+            <button type="button" class="btn btn-warning">Donar</button>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                data-target="#menu">
+                <img src="./assets/img/svg/menu.svg" alt="menu" class="custom-navbar-icon" width="50">
+            </button>
         </div>
     </nav>
     <main class="container blog__container">
