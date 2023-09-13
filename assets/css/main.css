@@ -150,15 +150,14 @@ footer {
 }
 
 .program__card__title {
-  background-color: yellow;
-  font-size: 1.125rem;
-  line-height: 18px;
-  font-weight: 700;
-  gap: 15px;
+  font-size: 1.6rem;
+  line-height: 36px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .program__items {
-  background-color: wheat;
   display: flex;
   flex-direction: row !important;
   justify-content: center;
@@ -191,7 +190,6 @@ footer {
 .program__item__detail__title {
   color: #2d4e9d;
   font-size: 1.2rem;
-  font-family: Raleway;
   font-weight: 600;
   line-height: 16px;
   word-wrap: break-word;
@@ -200,7 +198,6 @@ footer {
 .program__item__detail__host {
   color: #676767;
   font-size: 0.8rem;
-  font-family: Raleway;
   font-weight: 700;
   line-height: 15px;
   word-wrap: break-word;
@@ -220,6 +217,7 @@ footer {
   line-height: 36px;
   font-weight: bold;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .blog__items {
@@ -264,7 +262,6 @@ footer {
   position: absolute;
   color: white;
   font-size: 0.9rem;
-  font-family: Raleway;
   font-weight: 700;
   line-height: 15px;
   word-wrap: break-word;
@@ -276,7 +273,6 @@ footer {
   position: absolute;
   color: #ffd705;
   font-size: 0.8rem;
-  font-family: Raleway;
   font-weight: 700;
   line-height: 15px;
   word-wrap: break-word;
@@ -297,6 +293,7 @@ footer {
   line-height: 36px;
   font-weight: bold;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .podcast__items {
@@ -368,7 +365,7 @@ footer {
   line-height: 36px;
   font-weight: bold;
   margin: 0;
-  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .team__items {
@@ -413,7 +410,6 @@ footer {
 
 .team__item__detail__name {
   color: #fff;
-  font-family: Raleway;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
@@ -444,11 +440,10 @@ footer {
   line-height: 36px;
   font-weight: bold;
   margin: 0;
-  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .novelty__items {
-  background-color: yellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -457,12 +452,12 @@ footer {
 }
 
 .novelty__item {
-  background-color: #002da1;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
   cursor: pointer;
   transition: transform 1s ease;
 }
@@ -472,6 +467,8 @@ footer {
 }
 
 .novelty__item__detail {
+  left: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -497,7 +494,6 @@ footer {
 
 .novelty__item__detail__author {
   color: #676767;
-  font-family: Raleway;
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 700;
@@ -516,16 +512,14 @@ footer {
 }
 
 .recommend__card__title {
-  background-color: violet;
   font-size: 1.6rem;
   line-height: 36px;
   font-weight: bold;
   margin: 0;
-  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .recommend__items {
-  background-color: turquoise;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -570,28 +564,35 @@ footer {
   z-index: 2;
 }
 
+.recommend__items__detail__program {
+  position: relative;
+}
 .recommend__items__detail__program__name {
+  position: absolute;
+  bottom: 20px;
+  width: 400px;
   color: #fff;
-  font-family: Raleway;
-  font-size: 0.875rem;
+  font-size: 1.275rem;
   font-style: normal;
   font-weight: 700;
   line-height: 15px;
 }
 
 .recommend__items__detail__program__author {
+  position: absolute;
+  bottom: 0;
+  width: 400px;
   color: #ffd705;
-  font-family: Raleway;
-  font-size: 0.625rem;
+  font-size: 0.925rem;
   font-style: normal;
   font-weight: 700;
   line-height: 15px;
 }
 
-.recommend__items__action__button {
-  font-family: Raleway;
-  border-radius: 5px;
-  background: #ffd705;
+.recommend__items__action {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
 }
 
 /* top */
@@ -623,7 +624,6 @@ footer {
 
 .top__item__number {
   color: #181818;
-  font-family: Raleway;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
@@ -654,7 +654,6 @@ footer {
 .top__item__group__detail__name {
   color: #2d4e9d;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Raleway;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 600;
@@ -665,7 +664,6 @@ footer {
 .top__item__group__detail__author {
   color: var(--black-60, #676767);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Raleway;
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -806,7 +804,6 @@ footer {
 .dial-info {
   color: #181818;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Raleway;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -970,7 +967,6 @@ audio::-webkit-media-controls-current-time-display {
 
 .program-name {
   color: #fff;
-  font-family: Raleway;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -979,7 +975,6 @@ audio::-webkit-media-controls-current-time-display {
 
 .radio-host {
   color: #fff;
-  font-family: Raleway;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1004,7 +999,6 @@ audio::-webkit-media-controls-current-time-display {
   color: #181818;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Raleway;
   font-size: 10px;
   font-style: normal;
   font-weight: bold;
@@ -1152,7 +1146,6 @@ audio::-webkit-media-controls-current-time-display {
 
 .about__team__item__detail__name {
   color: #fff;
-  font-family: Raleway;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
@@ -1964,7 +1957,7 @@ audio::-webkit-media-controls-current-time-display {
 
   .team__item__detail__name {
     color: #fff;
-    font-family: Raleway;
+
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
