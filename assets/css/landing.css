@@ -208,7 +208,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   body {
     overflow-x: hidden;
   }
@@ -251,8 +251,10 @@ body {
     position: relative;
     border-radius: 10px;
     background: var(--city__image);
-    background-size: auto 200%;
+    background-size: cover !important;
     background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
     cursor: pointer;
     gap: 15px;
     height: 200px;
@@ -352,7 +354,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+/* @media screen and (min-width: 768px) and (max-width: 1023px) {
   .landing__card {
     display: flex;
     flex-direction: row;
@@ -489,7 +491,7 @@ body {
       }
     }
   }
-}
+} */
 
 @media screen and (min-width: 1024px) {
   body {
