@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Esperanza Colombia Radio</title>
-    <link rel="stylesheet" href="./assets/css/slick.css">
-    <link rel="stylesheet" href="./assets/css/slick.theme.css">
-    <link rel="stylesheet" href="./assets/css/radio-reproductor.css" type="text/css">
+    <link rel="stylesheet" href="./assets/lib/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/lib/owl/assets/owl.theme.default.css">
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -63,149 +61,50 @@
         </div>
     </nav>
     <main class="container">
-        <div class="schedule">
-            <h1 class="schedule__title">Programación regular</h1>
-            <div class="schedule__group">
-                <a href="" class="btn schedule__group__button__active">Domingo</a>
-                <a href="" class="btn schedule__group__button">Lunes</a>
-                <a href="" class="btn schedule__group__button">Martes</a>
-                <a href="" class="btn schedule__group__button">Miercoles</a>
-                <a href="" class="btn schedule__group__button">Jueves</a>
-                <a href="" class="btn schedule__group__button">Viernes</a>
-                <a href="" class="btn schedule__group__button">Sabado</a>
-            </div>
-            <div class="schedule__programs">
-                <div class="schedule__programs__card">
-                    <img src="https://s3-alpha-sig.figma.com/img/aa8a/4338/7f056cc27ec63359506caa6eac1814aa?Expires=1693785600&Signature=Ntzo6CN9GQUPdCFA2TbHSjTrGQxK-uEzsqw~~-ZgvbSJiadUXfCmh2YtdhCfPWy3u0xmN3MHKrtiBEXAZ0CIoh3t7jsCRr09wsixaV2FHmbHhWGTdrZSrSig2PPnU0GwMgjcf3YSMz7cbRo3nUQUWemuNKvdGdX1YxFyyqPC9D2MgKC7Q0So8XzvVYX~KOK30oUDXHXTn~R4TbGphoaN~i~eWXsqLI-lta5A~2f1-rHDDPb9F~0N4X2etguaLhBOH0-plnZBqAaH8DpEGKVvUdbXL5Wl1OEB0WOTu6L4ScRxWIr-vXD2M7yt2zPouV7PklLL6-YEcnk~75zXwVpNcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="" srcset="" class="schedule__programs__card__cover">
-                    <hr class="schedule__programs__card__divisor">
-                    <div class="schedule__programs__card__program">
-                        <span class="schedule__programs__card__program__name">
-                            Un mundo sin dolor
-                        </span>
-                        <span class="schedule__programs__card__program__host">
-                            Camilo Rodriguez
-                        </span>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="schedule">
+                    <h1 class="schedule__title">Programación regular</h1>
+                    <div class="schedule__group">
+                        <a href="" class="btn schedule__group__button__active">Domingo</a>
+                        <a href="" class="btn schedule__group__button">Lunes</a>
+                        <a href="" class="btn schedule__group__button">Martes</a>
+                        <a href="" class="btn schedule__group__button">Miercoles</a>
+                        <a href="" class="btn schedule__group__button">Jueves</a>
+                        <a href="" class="btn schedule__group__button">Viernes</a>
+                        <a href="" class="btn schedule__group__button">Sabado</a>
                     </div>
-                    <hr class="schedule__programs__card__divisor__2">
-                    <div class="schedule__programs__card__time">
-                        <img class="schedule__programs__card__time__icon" src="./assets/img/svg/clock.svg" alt=""
-                            srcset="">
-                        <div class="schedule__programs__card__time__detail">
-                            <span class="schedule__programs__card__time__detail__title">
-                                Hora del programa
-                            </span>
-                            <span class="schedule__programs__card__time__detail__time">
-                                12:00am - 01:00am
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="schedule__programs__card">
-                    <img src="https://s3-alpha-sig.figma.com/img/aa8a/4338/7f056cc27ec63359506caa6eac1814aa?Expires=1693785600&Signature=Ntzo6CN9GQUPdCFA2TbHSjTrGQxK-uEzsqw~~-ZgvbSJiadUXfCmh2YtdhCfPWy3u0xmN3MHKrtiBEXAZ0CIoh3t7jsCRr09wsixaV2FHmbHhWGTdrZSrSig2PPnU0GwMgjcf3YSMz7cbRo3nUQUWemuNKvdGdX1YxFyyqPC9D2MgKC7Q0So8XzvVYX~KOK30oUDXHXTn~R4TbGphoaN~i~eWXsqLI-lta5A~2f1-rHDDPb9F~0N4X2etguaLhBOH0-plnZBqAaH8DpEGKVvUdbXL5Wl1OEB0WOTu6L4ScRxWIr-vXD2M7yt2zPouV7PklLL6-YEcnk~75zXwVpNcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="" srcset="" class="schedule__programs__card__cover">
-                    <hr class="schedule__programs__card__divisor">
-                    <div class="schedule__programs__card__program">
-                        <span class="schedule__programs__card__program__name">
-                            Un mundo sin dolor
-                        </span>
-                        <span class="schedule__programs__card__program__host">
-                            Camilo Rodriguez
-                        </span>
-                    </div>
-                    <hr class="schedule__programs__card__divisor__2">
-                    <div class="schedule__programs__card__time">
-                        <img class="schedule__programs__card__time__icon" src="./assets/img/svg/clock.svg" alt=""
-                            srcset="">
-                        <div class="schedule__programs__card__time__detail">
-                            <span class="schedule__programs__card__time__detail__title">
-                                Hora del programa
-                            </span>
-                            <span class="schedule__programs__card__time__detail__time">
-                                12:00am - 01:00am
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="schedule__programs__card">
-                    <img src="https://s3-alpha-sig.figma.com/img/aa8a/4338/7f056cc27ec63359506caa6eac1814aa?Expires=1693785600&Signature=Ntzo6CN9GQUPdCFA2TbHSjTrGQxK-uEzsqw~~-ZgvbSJiadUXfCmh2YtdhCfPWy3u0xmN3MHKrtiBEXAZ0CIoh3t7jsCRr09wsixaV2FHmbHhWGTdrZSrSig2PPnU0GwMgjcf3YSMz7cbRo3nUQUWemuNKvdGdX1YxFyyqPC9D2MgKC7Q0So8XzvVYX~KOK30oUDXHXTn~R4TbGphoaN~i~eWXsqLI-lta5A~2f1-rHDDPb9F~0N4X2etguaLhBOH0-plnZBqAaH8DpEGKVvUdbXL5Wl1OEB0WOTu6L4ScRxWIr-vXD2M7yt2zPouV7PklLL6-YEcnk~75zXwVpNcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="" srcset="" class="schedule__programs__card__cover">
-                    <hr class="schedule__programs__card__divisor">
-                    <div class="schedule__programs__card__program">
-                        <span class="schedule__programs__card__program__name">
-                            Un mundo sin dolor
-                        </span>
-                        <span class="schedule__programs__card__program__host">
-                            Camilo Rodriguez
-                        </span>
-                    </div>
-                    <hr class="schedule__programs__card__divisor__2">
-                    <div class="schedule__programs__card__time">
-                        <img class="schedule__programs__card__time__icon" src="./assets/img/svg/clock.svg" alt=""
-                            srcset="">
-                        <div class="schedule__programs__card__time__detail">
-                            <span class="schedule__programs__card__time__detail__title">
-                                Hora del programa
-                            </span>
-                            <span class="schedule__programs__card__time__detail__time">
-                                12:00am - 01:00am
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="schedule__programs__card">
-                    <img src="https://s3-alpha-sig.figma.com/img/aa8a/4338/7f056cc27ec63359506caa6eac1814aa?Expires=1693785600&Signature=Ntzo6CN9GQUPdCFA2TbHSjTrGQxK-uEzsqw~~-ZgvbSJiadUXfCmh2YtdhCfPWy3u0xmN3MHKrtiBEXAZ0CIoh3t7jsCRr09wsixaV2FHmbHhWGTdrZSrSig2PPnU0GwMgjcf3YSMz7cbRo3nUQUWemuNKvdGdX1YxFyyqPC9D2MgKC7Q0So8XzvVYX~KOK30oUDXHXTn~R4TbGphoaN~i~eWXsqLI-lta5A~2f1-rHDDPb9F~0N4X2etguaLhBOH0-plnZBqAaH8DpEGKVvUdbXL5Wl1OEB0WOTu6L4ScRxWIr-vXD2M7yt2zPouV7PklLL6-YEcnk~75zXwVpNcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="" srcset="" class="schedule__programs__card__cover">
-                    <hr class="schedule__programs__card__divisor">
-                    <div class="schedule__programs__card__program">
-                        <span class="schedule__programs__card__program__name">
-                            Un mundo sin dolor
-                        </span>
-                        <span class="schedule__programs__card__program__host">
-                            Camilo Rodriguez
-                        </span>
-                    </div>
-                    <hr class="schedule__programs__card__divisor__2">
-                    <div class="schedule__programs__card__time">
-                        <img class="schedule__programs__card__time__icon" src="./assets/img/svg/clock.svg" alt=""
-                            srcset="">
-                        <div class="schedule__programs__card__time__detail">
-                            <span class="schedule__programs__card__time__detail__title">
-                                Hora del programa
-                            </span>
-                            <span class="schedule__programs__card__time__detail__time">
-                                12:00am - 01:00am
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="schedule__programs__card">
-                    <img src="https://s3-alpha-sig.figma.com/img/aa8a/4338/7f056cc27ec63359506caa6eac1814aa?Expires=1693785600&Signature=Ntzo6CN9GQUPdCFA2TbHSjTrGQxK-uEzsqw~~-ZgvbSJiadUXfCmh2YtdhCfPWy3u0xmN3MHKrtiBEXAZ0CIoh3t7jsCRr09wsixaV2FHmbHhWGTdrZSrSig2PPnU0GwMgjcf3YSMz7cbRo3nUQUWemuNKvdGdX1YxFyyqPC9D2MgKC7Q0So8XzvVYX~KOK30oUDXHXTn~R4TbGphoaN~i~eWXsqLI-lta5A~2f1-rHDDPb9F~0N4X2etguaLhBOH0-plnZBqAaH8DpEGKVvUdbXL5Wl1OEB0WOTu6L4ScRxWIr-vXD2M7yt2zPouV7PklLL6-YEcnk~75zXwVpNcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="" srcset="" class="schedule__programs__card__cover">
-                    <hr class="schedule__programs__card__divisor">
-                    <div class="schedule__programs__card__program">
-                        <span class="schedule__programs__card__program__name">
-                            Un mundo sin dolor
-                        </span>
-                        <span class="schedule__programs__card__program__host">
-                            Camilo Rodriguez
-                        </span>
-                    </div>
-                    <hr class="schedule__programs__card__divisor__2">
-                    <div class="schedule__programs__card__time">
-                        <img class="schedule__programs__card__time__icon" src="./assets/img/svg/clock.svg" alt=""
-                            srcset="">
-                        <div class="schedule__programs__card__time__detail">
-                            <span class="schedule__programs__card__time__detail__title">
-                                Hora del programa
-                            </span>
-                            <span class="schedule__programs__card__time__detail__time">
-                                12:00am - 01:00am
-                            </span>
+                    <div>
+                        <div class="schedule__programs__card">
+                            <img src="https://s3-alpha-sig.figma.com/img/aa8a/4338/7f056cc27ec63359506caa6eac1814aa?Expires=1693785600&Signature=Ntzo6CN9GQUPdCFA2TbHSjTrGQxK-uEzsqw~~-ZgvbSJiadUXfCmh2YtdhCfPWy3u0xmN3MHKrtiBEXAZ0CIoh3t7jsCRr09wsixaV2FHmbHhWGTdrZSrSig2PPnU0GwMgjcf3YSMz7cbRo3nUQUWemuNKvdGdX1YxFyyqPC9D2MgKC7Q0So8XzvVYX~KOK30oUDXHXTn~R4TbGphoaN~i~eWXsqLI-lta5A~2f1-rHDDPb9F~0N4X2etguaLhBOH0-plnZBqAaH8DpEGKVvUdbXL5Wl1OEB0WOTu6L4ScRxWIr-vXD2M7yt2zPouV7PklLL6-YEcnk~75zXwVpNcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                alt="" srcset="" class="schedule__programs__card__cover">
+                            <hr class="schedule__programs__card__divisor">
+                            <div class="schedule__programs__card__program">
+                                <span class="schedule__programs__card__program__name">
+                                    Un mundo sin dolor
+                                </span>
+                                <span class="schedule__programs__card__program__host">
+                                    Camilo Rodriguez
+                                </span>
+                            </div>
+                            <hr class="schedule__programs__card__divisor__2">
+                            <div class="schedule__programs__card__time">
+                                <img class="schedule__programs__card__time__icon" src="./assets/img/svg/clock.svg"
+                                    alt="" srcset="">
+                                <div class="schedule__programs__card__time__detail">
+                                    <span class="schedule__programs__card__time__detail__title">
+                                        Hora del programa
+                                    </span>
+                                    <span class="schedule__programs__card__time__detail__time">
+                                        12:00am - 01:00am
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
     <div class="whatsapp__button__float">
@@ -215,31 +114,31 @@
             <span>Escríbenos</span>
         </a>
     </div>
-    <footer class="footer">
-        <div class="footer-logos">
+    <footer class="container-fluid footer">
+        <div class="logos">
             <div class="images">
                 <img src="./assets/img/logos/awr.png" alt="" srcset="" width="200">
                 <img src="./assets/img/logos/iasd.svg" alt="" srcset="" width="200">
             </div>
             <p>Esta emisora hace parte de la Radio Mundial Adventista</p>
         </div>
-        <div class="call-to-action">
-            <p class="download-app-title">Descarga la app</p>
-            <div class="store-devices">
+        <div class="app__store">
+            <p class="store__app__title">Descarga la app</p>
+            <div class="app__store__images">
                 <img src="./assets/img/store-devices/play-store.png" alt="" srcset="" width="150">
                 <img src="./assets/img/store-devices/app-store.png" alt="" srcset="" width="130">
             </div>
         </div>
-        <div class="footer-content">
-            <div class="social-icons">
+        <div class="links">
+            <div class="links__socials">
                 <img src="./assets/img/social/facebook.webp" alt="" srcset="" width="35">
                 <img src="./assets/img/social/instagram.png" alt="" srcset="" width="30">
-                <p>| Síguenos</p>
+                <span>| Síguenos</span>
             </div>
-            <div class="terms-privacy">
+            <div class="">
                 <a href="">Términos</a> | <a href="">Privacidad</a>
             </div>
-            <div class="copy">
+            <div class="">
                 <p>© 2023 UCN. Todos los derechos reservados.</p>
             </div>
         </div>
@@ -291,6 +190,7 @@
 <script src="./assets/js/jquery.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/radio-reproductor.js"></script>
-<script src="./assets/js/scrollreveal.min.js"></script>
-
+<script src="./assets/lib/owl/owl.carousel.js"></script>
+<script src="./assets/lib/owl/owl.carousel.min.js"></script>
+<script src="./assets/js/slide.js"></script>
 </html>

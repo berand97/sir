@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Esperanza Colombia Radio</title>
-    <link rel="stylesheet" href="./assets/css/radio-reproductor.css" type="text/css">
+    <link rel="stylesheet" href="./assets/lib/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/lib/owl/assets/owl.theme.default.css">
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-<body>  
+<body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="./index.html">
@@ -34,20 +35,16 @@
                         </div>
                     </li>
                     <li class="nav-item mt-2"> <a class="nav-link" href="./nosotros.html"> <span
-                                class="d-inline-block d-lg-none"><i
-                                    class="fas fa-home"></i></span>Nosotros</a>
+                                class="d-inline-block d-lg-none"><i class="fas fa-home"></i></span>Nosotros</a>
                     </li>
                     <li class="nav-item mt-2"> <a class="nav-link" href="./programate.html"><span
-                                class="d-inline-block d-lg-none"><i
-                                    class="fas fa-spa"></i></span>Prográmate</a>
+                                class="d-inline-block d-lg-none"><i class="fas fa-spa"></i></span>Prográmate</a>
                     </li>
                     <li class="nav-item mt-2"> <a class="nav-link" href="./programas.html"><span
-                                class="d-inline-block d-lg-none"><i
-                                    class="far fa-user"></i></i></span>Programas</a>
+                                class="d-inline-block d-lg-none"><i class="far fa-user"></i></i></span>Programas</a>
                     </li>
                     <li class="nav-item mt-2"> <a class="nav-link" href="./blog.html"><span
-                                class="d-inline-block d-lg-none"><i
-                                    class="far fa-envelope"></i></span>blog</a>
+                                class="d-inline-block d-lg-none"><i class="far fa-envelope"></i></span>blog</a>
                     </li>
                     <li class="nav-item mt-2"> <a class="nav-link"
                             href="https://www.unioncolombiana.org.co/es/noticias/1/union-colombiana-del-norte/"
@@ -63,74 +60,78 @@
             </button>
         </div>
     </nav>
-    <main class="city__about__container">
-        <div class="city__about__card">
-            <h1 class="city__about__card__title">Historia</h1>
-            <div class="city__about__card__content">
-                <img class="city__about__card__content__image"
-                    src="https://s3-alpha-sig.figma.com/img/9100/b561/29470a7420fa0e48b074d61ac6c83ef1?Expires=1693785600&Signature=bazusbxnv8he1m3yigjIWtz~1WQiBv2HrMsV1ENqZ8P68VZ11cJE6gcpH9-i5ya2PeilGowcSJjR5G7oGBiNurmxWE61gWed-NKcCf83FRA92V~WAJ5Bqg2XoiDcurPdEwkoaBthgvKqtopJg43aajnqfdE1Ie6e14OgkQ3MI42k9Ft5BNR4Ys6eZkb4joNLSRLbQt6LIPXvjswdo3pcIeD8NbROVV2hwnNW856kvBFZ40ixRbvBzIDtO6qlTL3eVVhM26Eyg4Ex1LnNhOLgC0bCibgewhUck86ebx90JzgAiRWZ2~roC3cK8QgaXOlehHvmz63Dr-izxbvnqc-Ryg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
-                <div class="city__about__card__content__history">
-                    <h1 class="city__about__card__content__history__title">Adventistas de la UCN celebran lanzamiento de
-                        radio y TV por Internet
-                    </h1>
-                    <div class="city__about__card__content__history__description">
-                        Como resultado del esfuerzo, las oraciones, dedicación y colaboración por parte de los
-                        adventistas el proyecto bandera de la Unión Colombiana del Norte (UCN) para el quinquenio
-                        2010-2015, se
-                        torno una realidad. <br />
-                        Con un acto en vivo, se realizó el lanzamiento de Esperanza Colombia Radio y
-                        TV por Internet, el martes 22 de julio. El momento, histórico para las comunicaciones
-                        adventistas
-                        en Colombia, se celebró desde los estudios de radio y televisión ubicados en la ciudad de
-                        Medellín.<br />
-                        El evento tuvo la participación de líderes de la iglesia Adventista del Séptimo Día (IASD),
-                        en
-                        la Unión Colombiana del Norte (UCN), entre ellos Edgar Redondo presidente de la UCN, Dubiel
-                        Quintero,
-                        gerente financiero, Ezequiel Rueda, director de comunicación, y los líderes y
-                        administradores de las
-                        8 sedes administrativas de la IASD en el norte de Colombia.
+    <main class="container city__about__container ">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="city__about__card">
+                    <h1 class="city__about__card__title">Historia</h1>
+                    <div class="city__about__card__content">
+                        <img class="city__about__card__content__image"
+                            src="https://s3-alpha-sig.figma.com/img/9100/b561/29470a7420fa0e48b074d61ac6c83ef1?Expires=1693785600&Signature=bazusbxnv8he1m3yigjIWtz~1WQiBv2HrMsV1ENqZ8P68VZ11cJE6gcpH9-i5ya2PeilGowcSJjR5G7oGBiNurmxWE61gWed-NKcCf83FRA92V~WAJ5Bqg2XoiDcurPdEwkoaBthgvKqtopJg43aajnqfdE1Ie6e14OgkQ3MI42k9Ft5BNR4Ys6eZkb4joNLSRLbQt6LIPXvjswdo3pcIeD8NbROVV2hwnNW856kvBFZ40ixRbvBzIDtO6qlTL3eVVhM26Eyg4Ex1LnNhOLgC0bCibgewhUck86ebx90JzgAiRWZ2~roC3cK8QgaXOlehHvmz63Dr-izxbvnqc-Ryg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="city__about__card__content__history">
+                            <h1 class="city__about__card__content__history__title">Adventistas de la UCN celebran lanzamiento de
+                                radio y TV por Internet
+                            </h1>
+                            <div class="city__about__card__content__history__description">
+                                Como resultado del esfuerzo, las oraciones, dedicación y colaboración por parte de los
+                                adventistas el proyecto bandera de la Unión Colombiana del Norte (UCN) para el quinquenio
+                                2010-2015, se
+                                torno una realidad. <br />
+                                Con un acto en vivo, se realizó el lanzamiento de Esperanza Colombia Radio y
+                                TV por Internet, el martes 22 de julio. El momento, histórico para las comunicaciones
+                                adventistas
+                                en Colombia, se celebró desde los estudios de radio y televisión ubicados en la ciudad de
+                                Medellín.<br />
+                                El evento tuvo la participación de líderes de la iglesia Adventista del Séptimo Día (IASD),
+                                en
+                                la Unión Colombiana del Norte (UCN), entre ellos Edgar Redondo presidente de la UCN, Dubiel
+                                Quintero,
+                                gerente financiero, Ezequiel Rueda, director de comunicación, y los líderes y
+                                administradores de las
+                                8 sedes administrativas de la IASD en el norte de Colombia.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="about__team__card">
+                    <p class="about__team__card__title">Equipo</p>
+                    <div class="about__team__items owl-carousel about-teams">
+                        <div class="about__team__card__team__item">
+                            <img class="about__team__card__image"
+                                src="https://s3-alpha-sig.figma.com/img/19cb/76ed/e4cd78c828d132648d8cee89b3f38160?Expires=1695600000&Signature=GgIZDLD2DIK9r-nGxV4nB5xBReU3bt8ZNOZbCFeH~tdxrbFJZtZRjnXxMDA2Tp49win0-OeAENeKNpLe26vkwinW0ruiWEGXfVomGasw1IV02bdd-qnzNCsK4O9xpSsG8gK4XTdsKRm3Di5LxRAiwv9ITLY44de32X29msUL2L6KoV5vIWs3rrg4CkyaqzDQb4k6hTDZr3mHcz6vsHWwA~qMNZaO1ALJm4cvWM08gJ5NWQhs6AlUNc19d6YzhwLE~JhRTamnoPEAh6Lp08MQJD6DgV1HkYjqeqxAM0gjNGpdhOwW~118uceV~SvtWOSZJ2fXfYd9ZsIYPHeuYdSUgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                alt="Member" />
+                            <div class="about__team__card__background"></div>
+                            <div class="about__team__team__item__detail">
+                                <div class="about__team__item__detail__name">Gabriel Moreno</div>
+                                <div class="about__team__item__detail__job">Dircom</div>
+                            </div>
+                        </div>
+                        <div class="about__team__card__team__item">
+                            <img class="about__team__card__image"
+                                src="https://s3-alpha-sig.figma.com/img/9866/f9f3/715b8179b6046c581fa4e9da2ab46132?Expires=1695600000&Signature=FdD1psZH0dwzF1gB~-ydeVZD8evpXzoecNWQ~JkjksRH3FFujTDaC5ULfKB~Fkw-iYGugvp3IEOVWswR~D976XLUVBcBsI2TB1To~cWnPRy6j9MdJYabGaLwZ3GZJvtTLtYzvFs1ul2RR0iSNF0KcMc-cqFQbqfTkexH8Qm3yEWAy5VT1~SPo~BkBoF9Qz78XIVOfkkGxRx24KNo5bRMHY1ntIa4NTdYON2~03npWC50h3eNSTWqi~Z1gYb-8Lmv-gDomz4o5n7aQdnzr8Ix~8XiuwgMbc2c~~hh8DUlTllYa-DdNjZSZ6bs~D0KPQTrgHvu1AHW8eGjDQo23czMvQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                alt="Member" />
+                            <div class="about__team__card__background"></div>
+                            <div class="about__team__team__item__detail">
+                                <div class="about__team__item__detail__name">Henry Salgado</div>
+                                <div class="about__team__item__detail__job">Productor General</div>
+                            </div>
+                        </div>
+                        <div class="about__team__card__team__item">
+                            <img class="about__team__card__image"
+                                src="https://s3-alpha-sig.figma.com/img/8260/1a49/165924b471b2f0fd98466f56a3a00606?Expires=1695600000&Signature=pHfLbiwL9karCCtKOrDJXEpU2CEvNh-7Gh6xSlmAC0H2~cSTU4ls7YZJAn4fOQtZlwPU5wdXLWFM4sJGacOfj71Ww1ZP3Q8PVkgg9jcXeARZzG65yB-1l3ldDBvhyQ-K1hVEyc1P2niWoqdnA5XNUJ9vCnqxA2LoY3wv5bWX-bSMVtXjsTooKSw8z3Iu0IJDuPekjSZ9KzPEI6ZFKXRRyLFGPJIdbpMFJLt1iivj6rW7C4J-xci-CB1g~PEPMJmiX-6BgNWGmaUzPJ2wmbnhKCyPyCWjL~UrDx39w~A8R8fAaY53wTaztYvvY3D-aa34KubHQ8D0cOdu2PMM09b3kg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                alt="Member" />
+                            <div class="about__team__card__background"></div>
+                            <div class="about__team__team__item__detail">
+                                <div class="about__team__item__detail__name">Camilo Rodiguez</div>
+                                <div class="about__team__item__detail__job">Productor</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about__team__card">
-            <p class="about__team__card__title">Equipo</p>
-            <div class="about__team__items">
-                <div class="about__team__card__team__item">
-                    <img class="about__team__card__image"
-                        src="https://s3-alpha-sig.figma.com/img/19cb/76ed/e4cd78c828d132648d8cee89b3f38160?Expires=1695600000&Signature=GgIZDLD2DIK9r-nGxV4nB5xBReU3bt8ZNOZbCFeH~tdxrbFJZtZRjnXxMDA2Tp49win0-OeAENeKNpLe26vkwinW0ruiWEGXfVomGasw1IV02bdd-qnzNCsK4O9xpSsG8gK4XTdsKRm3Di5LxRAiwv9ITLY44de32X29msUL2L6KoV5vIWs3rrg4CkyaqzDQb4k6hTDZr3mHcz6vsHWwA~qMNZaO1ALJm4cvWM08gJ5NWQhs6AlUNc19d6YzhwLE~JhRTamnoPEAh6Lp08MQJD6DgV1HkYjqeqxAM0gjNGpdhOwW~118uceV~SvtWOSZJ2fXfYd9ZsIYPHeuYdSUgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="Member" />
-                    <div class="about__team__card__background"></div>
-                    <div class="team__item__detail">
-                        <div class="about__team__item__detail__name">Gabriel Moreno</div>
-                        <div class="about__team__item__detail__job">Dircom</div>
-                    </div>
-                </div>
-                <div class="about__team__card__team__item">
-                    <img class="about__team__card__image"
-                        src="https://s3-alpha-sig.figma.com/img/9866/f9f3/715b8179b6046c581fa4e9da2ab46132?Expires=1695600000&Signature=FdD1psZH0dwzF1gB~-ydeVZD8evpXzoecNWQ~JkjksRH3FFujTDaC5ULfKB~Fkw-iYGugvp3IEOVWswR~D976XLUVBcBsI2TB1To~cWnPRy6j9MdJYabGaLwZ3GZJvtTLtYzvFs1ul2RR0iSNF0KcMc-cqFQbqfTkexH8Qm3yEWAy5VT1~SPo~BkBoF9Qz78XIVOfkkGxRx24KNo5bRMHY1ntIa4NTdYON2~03npWC50h3eNSTWqi~Z1gYb-8Lmv-gDomz4o5n7aQdnzr8Ix~8XiuwgMbc2c~~hh8DUlTllYa-DdNjZSZ6bs~D0KPQTrgHvu1AHW8eGjDQo23czMvQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="Member" />
-                    <div class="about__team__card__background"></div>
-                    <div class="team__item__detail">
-                        <div class="about__team__item__detail__name">Henry Salgado</div>
-                        <div class="about__team__item__detail__job">Productor General</div>
-                    </div>
-                </div>
-                <div class="about__team__card__team__item">
-                    <img class="about__team__card__image"
-                        src="https://s3-alpha-sig.figma.com/img/8260/1a49/165924b471b2f0fd98466f56a3a00606?Expires=1695600000&Signature=pHfLbiwL9karCCtKOrDJXEpU2CEvNh-7Gh6xSlmAC0H2~cSTU4ls7YZJAn4fOQtZlwPU5wdXLWFM4sJGacOfj71Ww1ZP3Q8PVkgg9jcXeARZzG65yB-1l3ldDBvhyQ-K1hVEyc1P2niWoqdnA5XNUJ9vCnqxA2LoY3wv5bWX-bSMVtXjsTooKSw8z3Iu0IJDuPekjSZ9KzPEI6ZFKXRRyLFGPJIdbpMFJLt1iivj6rW7C4J-xci-CB1g~PEPMJmiX-6BgNWGmaUzPJ2wmbnhKCyPyCWjL~UrDx39w~A8R8fAaY53wTaztYvvY3D-aa34KubHQ8D0cOdu2PMM09b3kg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                        alt="Member" />
-                    <div class="about__team__card__background"></div>
-                    <div class="team__item__detail">
-                        <div class="about__team__item__detail__name">Camilo Rodiguez</div>
-                        <div class="about__team__item__detail__job">Productor</div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
     </main>
     <div class="whatsapp__button__float">
         <a href="https://api.whatsapp.com/send?phone=TUNUMERO" target="_blank">
@@ -138,31 +139,31 @@
             <span>Escríbenos</span>
         </a>
     </div>
-    <footer class="footer">
-        <div class="footer-logos">
+    <footer class="container-fluid footer">
+        <div class="logos">
             <div class="images">
                 <img src="./assets/img/logos/awr.png" alt="" srcset="" width="200">
                 <img src="./assets/img/logos/iasd.svg" alt="" srcset="" width="200">
             </div>
             <p>Esta emisora hace parte de la Radio Mundial Adventista</p>
         </div>
-        <div class="call-to-action">
-            <p class="download-app-title">Descarga la app</p>
-            <div class="store-devices">
+        <div class="app__store">
+            <p class="store__app__title">Descarga la app</p>
+            <div class="app__store__images">
                 <img src="./assets/img/store-devices/play-store.png" alt="" srcset="" width="150">
                 <img src="./assets/img/store-devices/app-store.png" alt="" srcset="" width="130">
             </div>
         </div>
-        <div class="footer-content">
-            <div class="social-icons">
+        <div class="links">
+            <div class="links__socials">
                 <img src="./assets/img/social/facebook.webp" alt="" srcset="" width="35">
                 <img src="./assets/img/social/instagram.png" alt="" srcset="" width="30">
-                <p>| Síguenos</p>
+                <span>| Síguenos</span>
             </div>
-            <div class="terms-privacy">
+            <div class="">
                 <a href="">Términos</a> | <a href="">Privacidad</a>
             </div>
-            <div class="copy">
+            <div class="">
                 <p>© 2023 UCN. Todos los derechos reservados.</p>
             </div>
         </div>
@@ -213,6 +214,7 @@
 <script src="./assets/js/jquery.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/radio-reproductor.js"></script>
-<script src="./assets/js/scrollreveal.min.js"></script>
-
+<script src="./assets/lib/owl/owl.carousel.js"></script>
+<script src="./assets/lib/owl/owl.carousel.min.js"></script>
+<script src="./assets/js/slide.js"></script>
 </html>

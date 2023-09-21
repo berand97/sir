@@ -1,131 +1,108 @@
-$(document).ready(function () {
-  $(".banner__items").slick({
-    dots: true,
-    infinite: false,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-  });
+$(".banner__items").owlCarousel({
+  loop: true,
+  margin: 15,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 1,
+    },
+    1024: {
+      items: 1,
+    },
+  },
+});
 
-  $(".program__items").slick({
-    dots: true,
-    infinite: false,
-    speed: 1000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-    ],
-  });
+$(".programs").owlCarousel({
+  loop: true,
+  margin: 15,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 2,
+    },
+    1024: {
+      items: 3,
+    },
+  },
+});
 
-  $(".blog__items").slick({
-    dots: true,
-    infinite: false,
-    speed: 1500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-    ],
-  });
+$(".blogs").owlCarousel({
+  loop: true,
+  margin: 15,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 1,
+    },
+    1024: {
+      items: 2,
+    },
+  },
+});
 
-  $(".podcast__items").slick({
-    dots: true,
-    infinite: false,
-    speed: 2000,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-    ],
-  });
+$(".podcast").owlCarousel({
+  loop: true,
+  margin: 15,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 1,
+    },
+    1024: {
+      items: 2,
+    },
+  },
+});
 
-  $(".team__items").slick({
-    dots: true,
-    infinite: false,
-    speed: 1500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-    ],
-  });
+$(".teams").owlCarousel({
+  margin: 15,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 1,
+    },
+    1024: {
+      items: 3,
+    },
+  },
+});
 
-  $(".other_programs__slide").slick({
-    dots: true,
-    infinite: false,
-    speed: 1500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [],
-  });
+$(".about-teams").owlCarousel({
+  margin: 0,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 3,
+    },
+    1024: {
+      items: 6,
+    },
+  },
+});
+
+$(".other_programs").owlCarousel({
+  margin: 0,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 3,
+    },
+    1024: {
+      items: 4,
+    },
+  },
 });

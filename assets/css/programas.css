@@ -1,0 +1,327 @@
+.modal-content {
+  width: 1140px !important;
+  margin-left: -400px;
+  border-radius: 10px;
+  background: #f9f9f9 !important;
+}
+
+.blog__container {
+  margin-top: 110px;
+}
+
+.program__card {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 15px;
+  margin:auto;
+}
+
+.program__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #2d4e9d;
+  padding-left: 15px;
+}
+
+.program__card__item {
+  margin: 0 7.5px;
+}
+
+.program__card__item__cover {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.program__card__item__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 5px;
+}
+
+.program__card__item__title {
+  align-self: stretch;
+  color: #181818;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.program__card__item__host {
+  align-self: stretch;
+  color: #181818;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.program__modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.program__modal__content__detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 300px;
+  padding: 15px;
+  gap: 15px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.program__modal__content__image {
+  width: 466px;
+  height: 262px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  position: relative;
+}
+
+.program__modal__content__image__background {
+  position: absolute;
+  width: 466px;
+  height: 262px;
+  top: 33px;
+  bottom: 0;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 45, 161, 0) 0%,
+    rgba(0, 45, 161, 0.8) 100%
+  );
+}
+
+.program__modal__content__image__button {
+  position: absolute;
+  top: 153px;
+  bottom: 0;
+  left: 233px;
+  right: 0;
+  width: 36.298px;
+  height: 36.298px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.program__modal__content__image__button:hover {
+  scale: 1.1;
+}
+
+.program__modal__content__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.program__modal__content__description__title {
+  color: #010101;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.program__modal__content__description__text {
+  color: #010101;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.program__modal__other_programs {
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  padding: 15px;
+}
+
+.program__modal__other_programs__title {
+  color: #2d4e9d;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.other_programs__slide {
+  min-height: 340px;
+}
+
+.programs__slide__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.program__modal__other_programs__slide__item__image {
+  width: 520px;
+  border-radius: 10px;
+}
+
+.program__modal__other_programs__slide__item__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.program__modal__other_programs__slide__item__detail__title {
+  color: #181818;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.program__modal__other_programs__slide__item__detail__host {
+  color: #181818;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-content {
+    min-width: 300px !important;
+    margin-left: 20px;
+    border-radius: 10px;
+    background: #f9f9f9 !important;
+  }
+
+  .program__modal__content {
+    width: calc(100% - 30px) !important;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program__modal__content__detail {
+    width: 100% !important;
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .program__modal__content__image {
+    width: 100% !important;
+    height: fit-content;
+    flex-shrink: 0;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .program__modal__content__image__background {
+    width: 318px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+  }
+
+  .program__modal__content__image__button {
+    position: absolute;
+    top: 145px;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    width: 36.298px;
+    height: 36.298px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  .program__modal__content__image__button {
+    left: 170px;
+    top: 130px;
+    cursor: pointer;
+  }
+
+  .program__modal__other_programs {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 30px) !important;
+  }
+
+  .program__modal__other_programs {
+    width: calc(100% - 30px) !important;
+  }
+
+  .program__modal__other_programs__slide {
+    width: 100% !important;
+  }
+
+  .other_programs__slide {
+    min-width: 300px !important;
+    min-height: 340px;
+  }
+
+  .programs__slide__item {
+    min-width: 100px !important;
+    height: fit-content;
+  }
+
+  .program__modal__other_programs__slide__item {
+    width: 100% !important;
+    height: fit-content;
+  }
+  .program__modal__other_programs__slide__item__image {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .modal-content {
+    min-width: 650px !important;
+    margin-left: -170px;
+    border-radius: 10px;
+    background: #f9f9f9 !important;
+  }
+
+  .program__modal__other_programs {
+    width: 600px !important;
+    border-radius: 10px;
+    background: #fff;
+    padding: 15px;
+  }
+
+  .program__modal__content {
+    width: 500px !important;
+  }
+
+  .program__modal__content__detail {
+    width: 600px!important;
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .program__modal__content__image__button {
+    left: 300px;
+    cursor: pointer;
+  }
+}

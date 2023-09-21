@@ -1,0 +1,242 @@
+.schedule {
+  margin-top: 100px;
+  min-height: 60vh;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.schedule__title {
+  color: #2d4e9d;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  word-wrap: break-word;
+  margin-bottom: 15px;
+}
+
+.schedule__group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-inline: 15px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #2d4e9d;
+  margin-bottom: 15px;
+}
+
+.schedule__group__button {
+  color: #fff;
+  width: 110px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #2d4e9d;
+  border-color: transparent;
+}
+
+.schedule__group__button__active {
+  color: #2d4e9d;
+  width: 110px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #fff;
+  border-color: transparent;
+}
+
+.schedule__programs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-inline: 15px;
+  margin-top: 15px;
+}
+
+.schedule__programs__card {
+  height: 95px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  border-radius: 5px;
+  border-left: 4px solid #2d4e9d;
+  position: relative;
+  gap: 15px;
+}
+
+.schedule__programs__card:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.schedule__programs__card:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+.schedule__programs__card__cover {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+
+.schedule__programs__card__divisor {
+  position: absolute;
+  width: 40px;
+  left: 120px;
+  top: 50px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  border: 0.5px #2d4e9d solid;
+}
+
+.schedule__programs__card__divisor__2 {
+  position: absolute;
+  width: 40px;
+  left: 720px;
+  top: 50px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  border: 0.5px #2d4e9d solid;
+}
+
+.schedule__programs__card__program {
+  left: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.schedule__programs__card__program__name {
+  color: #2d4e9d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.schedule__programs__card__program__host {
+  color: #181818;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.schedule__programs__card__time {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.schedule__programs__card__time__icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.schedule__programs__card__time__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.schedule__programs__card__time__detail__title {
+  color: #181818;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.schedule__programs__card__time__detail__time {
+  color: #181818;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .schedule__group{
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .schedule__programs__card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: auto;
+  }
+
+  .schedule__programs__card__divisor, .schedule__programs__card__divisor__2 {
+    display: none;
+  }
+
+  .schedule__programs__card__program {
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .schedule__programs__card__time {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .schedule__group{
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .schedule__programs__card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: auto;
+  }
+
+  .schedule__programs__card__divisor, .schedule__programs__card__divisor__2 {
+    display: none;
+  }
+
+  .schedule__programs__card__program {
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .schedule__programs__card__time {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+}

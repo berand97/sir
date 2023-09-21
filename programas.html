@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Esperanza Colombia Radio</title>
-    <link rel="stylesheet" type="text/css" href="./assets/lib/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="./assets/lib/slick/slick.css">
-    <link rel="stylesheet" href="./assets/css/radio-reproductor.css" type="text/css">
+    <link rel="stylesheet" href="./assets/lib/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/lib/owl/assets/owl.theme.default.css">
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 <body>
@@ -36,20 +34,16 @@
                         </div>
                     </li>
                     <li class="nav-item mt-2"> <a class="nav-link" href="./nosotros.html"> <span
-                                class="d-inline-block d-lg-none"><i
-                                    class="fas fa-home"></i></span>Nosotros</a>
+                                class="d-inline-block d-lg-none"><i class="fas fa-home"></i></span>Nosotros</a>
                     </li>
                     <li class="nav-item mt-2"> <a class="nav-link" href="./programate.html"><span
-                                class="d-inline-block d-lg-none"><i
-                                    class="fas fa-spa"></i></span>Prográmate</a>
+                                class="d-inline-block d-lg-none"><i class="fas fa-spa"></i></span>Prográmate</a>
                     </li>
                     <li class="nav-item mt-2"> <a class="nav-link" href="./programas.html"><span
-                                class="d-inline-block d-lg-none"><i
-                                    class="far fa-user"></i></i></span>Programas</a>
+                                class="d-inline-block d-lg-none"><i class="far fa-user"></i></i></span>Programas</a>
                     </li>
                     <li class="nav-item mt-2"> <a class="nav-link" href="./blog.html"><span
-                                class="d-inline-block d-lg-none"><i
-                                    class="far fa-envelope"></i></span>blog</a>
+                                class="d-inline-block d-lg-none"><i class="far fa-envelope"></i></span>blog</a>
                     </li>
                     <li class="nav-item mt-2"> <a class="nav-link"
                             href="https://www.unioncolombiana.org.co/es/noticias/1/union-colombiana-del-norte/"
@@ -65,123 +59,120 @@
             </button>
         </div>
     </nav>
-    <main class="container">
-        <div class="program__card__content">
+    <main class="container blog__container">
+        <div class="program__card">
             <p class="program__title">Programas</p>
-            <div class="programs__items">
-                <a class="program__card__item" data-toggle="modal" data-target="#exampleModal">
-                    <img class="program__card__item__cover" src="https://via.placeholder.com/256x256" />
-                    <div class="program__card__item__detail">
-                        <span class="program__card__item__title">Historias de la vida diaria</span>
-                        <span class="program__card__item__host">Leidy Niño</span>
-                    </div>
-                </a>
-                <a class="program__card__item" data-toggle="modal" data-target="#exampleModal">
-                    <img class="program__card__item__cover" src="https://via.placeholder.com/256x256" />
-                    <div class="program__card__item__detail">
-                        <span class="program__card__item__title">Charlas sobre crecimiento pers..</span>
-                        <span class="program__card__item__host">Manuel Montalvo</span>
-                    </div>
-                </a>
-                <a class="program__card__item" data-toggle="modal" data-target="#exampleModal">
-                    <img class="program__card__item__cover" src="https://via.placeholder.com/256x256" />
-                    <div class="program__card__item__detail">
-                        <span class="program__card__item__title">Estudio bíblico en centros carcelarios</span>
-                        <span class="program__card__item__host">Gabriel Cedano</span>
-                    </div>
-                </a>
-                <a class="program__card__item" data-toggle="modal" data-target="#exampleModal">
-                    <img class="program__card__item__cover" src="https://via.placeholder.com/256x256" />
-                    <div class="program__card__item__detail">
-                        <span class="program__card__item__title">Estudio bíblico en centros carcelarios</span>
-                        <span class="program__card__item__host">Gabriel Cedano</span>
-                    </div>
-                </a>
+            <div class="row mx-auto">
+                <div class="row col-sm-12 col-md-6 col-lg-4">
+                    <a class="program__card__item" data-toggle="modal" data-target="#exampleModal">
+                        <img class="program__card__item__cover" src="https://via.placeholder.com/256x256" />
+                        <div class="program__card__item__detail">
+                            <span class="program__card__item__title">Historias de la vida diaria</span>
+                            <span class="program__card__item__host">Leidy Niño</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="row col-sm-12 col-md-6 col-lg-4">
+                    <a class="program__card__item" data-toggle="modal" data-target="#exampleModal">
+                        <img class="program__card__item__cover" src="https://via.placeholder.com/256x256" />
+                        <div class="program__card__item__detail">
+                            <span class="program__card__item__title">Historias de la vida diaria</span>
+                            <span class="program__card__item__host">Leidy Niño</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="row col-sm-12 col-md-6 col-lg-4">
+                    <a class="program__card__item" data-toggle="modal" data-target="#exampleModal">
+                        <img class="program__card__item__cover" src="https://via.placeholder.com/256x256" />
+                        <div class="program__card__item__detail">
+                            <span class="program__card__item__title">Historias de la vida diaria</span>
+                            <span class="program__card__item__host">Leidy Niño</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
+        
+
         <div class="modal fade bd-example-modal-lg " id="exampleModal" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content program__modal__content">
-                <div class="program__modal__content__detail">
-                    <div class="program__modal__content__cover">
-                        <img class="program__modal__content__image" src="https://via.placeholder.com/366x262" />
-                        <div class="program__modal__content__image__background"></div>
-                        <a href="">
-                            <img class="program__modal__content__image__button"
-                                src="./assets/img/svg/play-circle-white.svg" />
-                        </a>
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content program__modal__content">
+                    <div class="program__modal__content__detail">
+                        <div class="program__modal__content__cover">
+                            <img class="program__modal__content__image" src="https://via.placeholder.com/366x262" />
+                            <div class="program__modal__content__image__background"></div>
+                            <a href="">
+                                <img class="program__modal__content__image__button"
+                                    src="./assets/img/svg/play-circle-white.svg" />
+                            </a>
+                        </div>
+                        <div class="program__modal__content__description">
+                            <h6 class="program__modal__content__description__title">A ver si sabes</h6>
+                            <p class="program__modal__content__description__text">Lorem Ipsum is simply dummy text of
+                                the
+                                printing and typesetting industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book. It has survived not only
+                                five
+                                centuries, but also the leap into electronic typesetting, remaining essentially
+                                unchanged.
+                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                Ipsum
+                                passages, and more recently with desktop publishing software like Aldus PageMaker
+                                including
+                                versions of Lorem Ipsum.</p>
+                        </div>
                     </div>
-                    <div class="program__modal__content__description">
-                        <h6 class="program__modal__content__description__title">A ver si sabes</h6>
-                        <p class="program__modal__content__description__text">Lorem Ipsum is simply dummy text of the
-                            printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing software like Aldus PageMaker including
-                            versions of Lorem Ipsum.</p>
-                    </div>
-                </div>
-                <div class="program__modal__other_programs">
-                    <h6 class="program__modal__other_programs__title">Otros programas</h6>
-                    <div class="other_programs__slide">
-                        <div class="programs__slide__item">
-                            <img class="program__modal__other_programs__slide__item__image"
-                                src="https://via.placeholder.com/256x256" />
-                            <div class="program__modal__other_programs__slide__item__detail">
-                                <div class="program__modal__other_programs__slide__item__detail__title">
-                                    Historias de la vida diaria</div>
-                                <div class="program__modal__other_programs__slide__item__detail__host">
-                                    Leidy Niño</div>
+                    <div class="program__modal__other_programs">
+                        <h6 class="program__modal__other_programs__title">Otros programas</h6>
+                        <div class="owl-carousel other_programs">
+                            <div class="programs__slide__item">
+                                <img class="program__modal__other_programs__slide__item__image"
+                                    src="https://via.placeholder.com/256x256" />
+                                <div class="program__modal__other_programs__slide__item__detail">
+                                    <div class="program__modal__other_programs__slide__item__detail__title">
+                                        Historias de la vida diaria</div>
+                                    <div class="program__modal__other_programs__slide__item__detail__host">
+                                        Leidy Niño</div>
+                                </div>
+                            </div>
+                            <div class="programs__slide__item">
+                                <img class="program__modal__other_programs__slide__item__image"
+                                    src="https://via.placeholder.com/256x256" />
+                                <div class="program__modal__other_programs__slide__item__detail">
+                                    <div class="program__modal__other_programs__slide__item__detail__title">
+                                        Historias de la vida diaria</div>
+                                    <div class="program__modal__other_programs__slide__item__detail__host">
+                                        Leidy Niño</div>
+                                </div>
+                            </div>
+                            <div class="programs__slide__item">
+                                <img class="program__modal__other_programs__slide__item__image"
+                                    src="https://via.placeholder.com/256x256" />
+                                <div class="program__modal__other_programs__slide__item__detail">
+                                    <div class="program__modal__other_programs__slide__item__detail__title">
+                                        Historias de la vida diaria</div>
+                                    <div class="program__modal__other_programs__slide__item__detail__host">
+                                        Leidy Niño</div>
+                                </div>
+                            </div>
+                            <div class="programs__slide__item">
+                                <img class="program__modal__other_programs__slide__item__image"
+                                    src="https://via.placeholder.com/256x256" />
+                                <div class="program__modal__other_programs__slide__item__detail">
+                                    <div class="program__modal__other_programs__slide__item__detail__title">
+                                        Historias de la vida diaria</div>
+                                    <div class="program__modal__other_programs__slide__item__detail__host">
+                                        Leidy Niño</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="programs__slide__item">
-                            <img class="program__modal__other_programs__slide__item__image"
-                                src="https://via.placeholder.com/256x256" />
-                            <div class="program__modal__other_programs__slide__item__detail">
-                                <div class="program__modal__other_programs__slide__item__detail__title">
-                                    Historias de la vida diaria</div>
-                                <div class="program__modal__other_programs__slide__item__detail__host">
-                                    Leidy Niño</div>
-                            </div>
-                        </div>
-                        <div class="programs__slide__item">
-                            <img class="program__modal__other_programs__slide__item__image"
-                                src="https://via.placeholder.com/256x256" />
-                            <div class="program__modal__other_programs__slide__item__detail">
-                                <div class="program__modal__other_programs__slide__item__detail__title">
-                                    Historias de la vida diaria</div>
-                                <div class="program__modal__other_programs__slide__item__detail__host">
-                                    Leidy Niño</div>
-                            </div>
-                        </div>
-                        <div class="programs__slide__item">
-                            <img class="program__modal__other_programs__slide__item__image"
-                                src="https://via.placeholder.com/256x256" />
-                            <div class="program__modal__other_programs__slide__item__detail">
-                                <div class="program__modal__other_programs__slide__item__detail__title">
-                                    Historias de la vida diaria</div>
-                                <div class="program__modal__other_programs__slide__item__detail__host">
-                                    Leidy Niño</div>
-                            </div>
-                        </div> 
-                        <div class="programs__slide__item">
-                            <img class="program__modal__other_programs__slide__item__image"
-                                src="https://via.placeholder.com/256x256" />
-                            <div class="program__modal__other_programs__slide__item__detail">
-                                <div class="program__modal__other_programs__slide__item__detail__title">
-                                    Historias de la vida diaria</div>
-                                <div class="program__modal__other_programs__slide__item__detail__host">
-                                    Leidy Niño</div>
-                            </div>
-                        </div>             
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </main>
     <div class="whatsapp__button__float">
         <a href="https://api.whatsapp.com/send?phone=TUNUMERO" target="_blank">
@@ -190,31 +181,31 @@
             <span>Escríbenos</span>
         </a>
     </div>
-    <footer class="footer">
-        <div class="footer-logos">
+    <footer class="container-fluid footer">
+        <div class="logos">
             <div class="images">
                 <img src="./assets/img/logos/awr.png" alt="" srcset="" width="200">
                 <img src="./assets/img/logos/iasd.svg" alt="" srcset="" width="200">
             </div>
             <p>Esta emisora hace parte de la Radio Mundial Adventista</p>
         </div>
-        <div class="call-to-action">
-            <p class="download-app-title">Descarga la app</p>
-            <div class="store-devices">
+        <div class="app__store">
+            <p class="store__app__title">Descarga la app</p>
+            <div class="app__store__images">
                 <img src="./assets/img/store-devices/play-store.png" alt="" srcset="" width="150">
                 <img src="./assets/img/store-devices/app-store.png" alt="" srcset="" width="130">
             </div>
         </div>
-        <div class="footer-content">
-            <div class="social-icons">
+        <div class="links">
+            <div class="links__socials">
                 <img src="./assets/img/social/facebook.webp" alt="" srcset="" width="35">
                 <img src="./assets/img/social/instagram.png" alt="" srcset="" width="30">
-                <p>| Síguenos</p>
+                <span>| Síguenos</span>
             </div>
-            <div class="terms-privacy">
+            <div class="">
                 <a href="">Términos</a> | <a href="">Privacidad</a>
             </div>
-            <div class="copy">
+            <div class="">
                 <p>© 2023 UCN. Todos los derechos reservados.</p>
             </div>
         </div>
@@ -262,11 +253,12 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 <script src="./assets/js/jquery.js"></script>
-<script type="text/javascript" src="./assets/lib/slick/slick.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/radio-reproductor.js"></script>
+<script src="./assets/lib/owl/owl.carousel.js"></script>
+<script src="./assets/lib/owl/owl.carousel.min.js"></script>
 <script src="./assets/js/slide.js"></script>
 </html>
